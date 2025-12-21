@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한상사 국제 중재원</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <script src="js/swiper.js" defer></script>
+    <script src="js/gsap.js" defer></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.7.4/dist/smooth-scrollbar.css">
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div class="menuDefault">
+            <h1>
+                <a href="/">
+                    <img src="images/kcab_logo.svg" alt="welcome to KCAB International">
+                </a>
+            </h1>
+            <div>
+                <nav class="fpowM">
+                    <ul>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/">Arbitration</a></li>
+                        <li><a href="/">Mediation</a></li>
+                        <li><a href="/">Rules</a></li>
+                        <li><a href="/">Korea Arbitration</a></li>
+                        <li><a href="/">Publications</a></li>
+                        <li><a href="/">News & Events</a></li>
+                        <li><a href="/">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="headerBtnBox">
+                    <button type="button" class="btnSearch typeFill fmawS15">Arbitral Award Search</button>
+                    <div class="langWrap">
+                        <button type="button" class="btnLang">language</button>
+                        <div class="langLayer fpo15">
+                            <div>
+                                <a href="/">KOR</a>
+                                <a href="/">ENG</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btnMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="menuDropPanel">
+            <ol class="fpoR15">
+                <li>
+                    <ul class="dep02List">
+                        <li>
+                            <a href="/"><span></span>KCAB INTERNATIONAL</a>
+                        </li>
+                        <li><a href="/"><span></span>Arbitration in Seoul</a></li>
+                        <li><a href="/"><span></span>Chairman and Secretariat</a></li>
+                        <li><a href="/"><span></span>KCAB Next</a></li>
+                        <li><a href="/"><span></span>Women’s Interest Committee</a></li>
+                        <li><a href="/"><span></span>International Advisory Board</a></li>
+                        <li><a href="/"><span></span>International Arbitration Court</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="dep02List">
+                        <li><a href="/"><span></span>Arbitration Procedure</a></li>
+                        <li><a href="/"><span></span>Request for Arbitration</a></li>
+                        <li><a href="/"><span></span>Panel of Arbitrators</a></li>
+                        <li><a href="/"><span></span>Model Clause</a></li>
+                        <li><a href="/"><span></span>Fees</a></li>
+                        <li><a href="/"><span></span>Hearing Facilities</a></li>
+                        <li><a href="/"><span></span>Additional Services</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="dep02List">
+                        <li><a href="/"><span></span>Mediation Procedure</a></li>
+                        <li><a href="/"><span></span>Panel of Mediators</a></li>
+                        <li><a href="/"><span></span>Model Clause</a></li>
+                        <li><a href="/"><span></span>Fees</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="dep02List">
+                        <li><a href="/"><span></span>KCAB INTERNATIONAL</a></li>
+                        <li><a href="/"><span></span>Arbitration in Seoul</a></li>
+                        <li><a href="/"><span></span>Chairman and Secretariat</a></li>
+                        <li><a href="/"><span></span>KCAB Next</a></li>
+                        <li><a href="/"><span></span>Women’s Interest Committee</a></li>
+                        <li><a href="/"><span></span>International Advisory Board</a></li>
+                        <li><a href="/"><span></span>International Arbitration Court</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="dep02List">
+                        <li><a href="/"><span></span>Korean Court Decisions on Arbitration</a></li>
+                        <li><a href="/"><span></span>Korean Arbitration Act</a></li>
+                        <li><a href="/"><span></span>Enforcement of Arbitral Awards in Korea</a></li>
+                        <li><a href="/"><span></span>Other Resources</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="dep02List">
+                        <li><a href="/"><span></span>Useful Resources</a></li>
+                        <li><a href="/"><span></span>Annual Report</a></li>
+                        <li><a href="/"><span></span>Korean Arbitration Review</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="dep02List">
+                        <li><a href="/"><span></span>Press Release</a></li>
+                        <li><a href="/"><span></span>Notice</a></li>
+                        <li><a href="/"><span></span>Events</a></li>
+                        <li><a href="/"><span></span>Photo Gallery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="dep02List">
+                        <li><a href="/"><span></span>Contact Us</a></li>
+                        <li><a href="/"><span></span>Careers</a></li>
+                        <li><a href="/"><span></span>FAQs</a></li>
+                        <li><a href="/"><span></span>Request for Mediation</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div class="menuScreenPanel">
+            <div class="panelWrap">
+                <div class="innerBox">
+                    <button type="button" class="btnSearch typeFill fmawS15 mui">Arbitral Award Search</button>
+                    <ol class="menuDep01List">
+                        <li>
+                            <h3 class="fpowEL36">
+                                About
+                                <a href="/" class="circleMore purple">learn more</a>
+                                <!-- <button type="button" class="btnMore">learn more</button> -->
+                            </h3>
+                            <ul class="fpowR17">
+                                <li><a href="/" data-text="KCAB INTERNATIONAL">KCAB INTERNATIONAL</a></li>
+                                <li><a href="/" data-text="Arbitration in Seoul">Arbitration in Seoul</a></li>
+                                <li><a href="/" data-text="Chairman and Secretariat">Chairman and Secretariat</a></li>
+                                <li><a href="/" data-text="KCAB Next">KCAB Next</a></li>
+                                <li><a href="/" data-text="Women’s Interest Committee">Women’s Interest Committee</a></li>
+                                <li><a href="/" data-text="International Advisory Board">International Advisory Board</a></li>
+                                <li><a href="/" data-text="International Arbitration Court">International Arbitration Court</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="fpowEL36">
+                                Arbitration
+                                <a href="/" class="circleMore purple">learn more</a>
+                            </h3>
+                            <ul class="fpowR17">
+                                <li><a href="/" data-text="Arbitration Procedure">Arbitration Procedure</a></li>
+                                <li><a href="/" data-text="Request for Arbitration">Request for Arbitration</a></li>
+                                <li><a href="/" data-text="Panel of Arbitrators">Panel of Arbitrators</a></li>
+                                <li><a href="/" data-text="Model Clause">Model Clause</a></li>
+                                <li><a href="/" data-text="Fees">Fees</a></li>
+                                <li><a href="/" data-text="Hearing Facilities">Hearing Facilities</a></li>
+                                <li><a href="/" data-text="Additional Services">Additional Services</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="fpowEL36">
+                                Mediation
+                                <a href="/" class="circleMore purple">learn more</a>
+                            </h3>
+                            <ul class="fpowR17">
+                                <li><a href="/" data-text="Mediation Procedure">Mediation Procedure</a></li>
+                                <li><a href="/" data-text="Panel of Mediators">Panel of Mediators</a></li>
+                                <li><a href="/" data-text="Model Clause">Model Clause</a></li>
+                                <li><a href="/" data-text="Fees">Fees</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="fpowEL36">
+                                Rules
+                                <a href="/" class="circleMore purple">learn more</a>
+                            </h3>
+                            <ul class="fpowR17">
+                                <li><a href="/" data-text="KCAB INTERNATIONAL">KCAB INTERNATIONAL</a></li>
+                                <li><a href="/" data-text="Arbitration in Seoul">Arbitration in Seoul</a></li>
+                                <li><a href="/" data-text="Chairman and Secretariat">Chairman and Secretariat</a></li>
+                                <li><a href="/" data-text="KCAB Next">KCAB Next</a></li>
+                                <li><a href="/" data-text="Women’s Interest Committee">Women’s Interest Committee</a></li>
+                                <li><a href="/" data-text="International Advisory Board">International Advisory Board</a></li>
+                                <li><a href="/" data-text="International Arbitration Court">International Arbitration Court</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="fpowEL36">
+                                Korea Arbitration
+                                <a href="/" class="circleMore purple">learn more</a>
+                            </h3>
+                            <ul class="fpowR17">
+                                <li><a href="/" data-text="Korean Court Decisions on Arbitration">Korean Court Decisions on Arbitration</a></li>
+                                <li><a href="/" data-text="Korean Arbitration Act">Korean Arbitration Act</a></li>
+                                <li><a href="/" data-text="Enforcement of Arbitral Awards in Korea">Enforcement of Arbitral Awards in Korea</a></li>
+                                <li><a href="/" data-text="Other Resources">Other Resources</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="fpowEL36">
+                                Publications
+                                <a href="/" class="circleMore purple">learn more</a>
+                            </h3>
+                            <ul class="fpowR17">
+                                <li><a href="/" data-text="Useful Resources">Useful Resources</a></li>
+                                <li><a href="/" data-text="Annual Report">Annual Report</a></li>
+                                <li><a href="/" data-text="Korean Arbitration Review">Korean Arbitration Review</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="fpowEL36">
+                                News & Events
+                                <a href="/" class="circleMore purple">learn more</a>
+                            </h3>
+                            <ul class="fpowR17">
+                                <li><a href="/" data-text="Press Release">Press Release</a></li>
+                                <li><a href="/" data-text="Notice">Notice</a></li>
+                                <li><a href="/" data-text="Events">Events</a></li>
+                                <li><a href="/" data-text="Photo Gallery">Photo Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="fpowEL36">
+                                Contact Us
+                                <a href="/" class="circleMore purple">learn more</a>
+                            </h3>
+                            <ul class="fpowR17">
+                                <li><a href="/" data-text="Contact Us">Contact Us</a></li>
+                                <li><a href="/" data-text="Careers">Careers</a></li>
+                                <li><a href="/" data-text="FAQs">FAQs</a></li>
+                                <li><a href="/" data-text="Request for Mediation">Request for Mediation</a></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="contentWrap" id="smooth-wrapper">
+        <div id="smooth-content">
+            <div class="mainSlideContainer swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="innerBox">
+                            <div class="textBox">
+                                <h2 class="fpowM90">
+                                    <p>Leading</p>
+                                    <p>International</p>
+                                    <p>Arbitration from Seoul</p>
+                                </h2>
+                                <p class="fpowR28">Korea's premier arbitration institution providing world-class dispute resolution with global reach and local expertise.</p>
+                            </div>
+                            <div class="imageBox">
+                                <img src="images/kcab_bg_slide_01_01.png" alt="slide image 01">
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="innerBox">
+                            <div class="textBox">
+                                <h2 class="fpowM90">
+                                    <p>Leading</p>
+                                    <p>International</p>
+                                    <p>Arbitration from Seoul</p>
+                                </h2>
+                                <p class="fpowR28">Korea's premier arbitration institution providing world-class dispute resolution with global reach and local expertise.</p>
+                            </div>
+                            <div class="imageBox">
+                                <img src="images/kcab_bg_slide_01_01.png" alt="slide image 01">
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="innerBox">
+                            <div class="textBox">
+                                <h2 class="fpowM90">
+                                    <p>Leading</p>
+                                    <p>International</p>
+                                    <p>Arbitration from Seoul</p>
+                                </h2>
+                                <p class="fpowR28">Korea's premier arbitration institution providing world-class dispute resolution with global reach and local expertise.</p>
+                            </div>
+                            <div class="imageBox">
+                                <img src="images/kcab_bg_slide_01_01.png" alt="slide image 01">
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="innerBox">
+                            <div class="textBox">
+                                <h2 class="fpowM90">
+                                    <p>Leading</p>
+                                    <p>International</p>
+                                    <p>Arbitration from Seoul</p>
+                                </h2>
+                                <p class="fpowR28">Korea's premier arbitration institution providing world-class dispute resolution with global reach and local expertise.</p>
+                            </div>
+                            <div class="imageBox">
+                                <img src="images/kcab_bg_slide_01_01.png" alt="slide image 01">
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="mainSlideControl fmawS28">
+                    <div class="swiper-button-next fma">→</div>
+                    <div class="swiper-button-prev fma">←</div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="searchContainer">
+                <h2 class="fpowM40">Arbitral Award Search</h2>
+                <p class="fsuwR17">Search our comprehensive database of arbitration cases and precedents</p>
+                <div class="searchBox">
+                    <form>
+                        <div class="innerBox">
+                            <select class="fsuwS14">
+                                <option>Case Field</option>
+                                <option>Case Field 1</option>
+                                <option>Case Field 2</option>
+                                <option>Case Field 3</option>
+                            </select>
+                            <select class="fsuwS14">
+                                <option>Type</option>
+                                <option>Type 1</option>
+                                <option>Type 2</option>
+                                <option>Type 3</option>
+                            </select>
+                            <div>
+                                <input type="search" class="fsuwM14" placeholder="Search by keyword, case number...">
+                                <input type="submit" value="Search" class="fsuwK14">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="searchKeyword">
+                    <button type="button" class="btnKeyword typeFill fsuwS14">Trade Contracts</button>
+                    <button type="button" class="btnKeyword typeFill fsuwS14">Construction Disputes</button>
+                    <button type="button" class="btnKeyword typeFill fsuwS14">Trade Contracts</button>
+                    <button type="button" class="btnKeyword typeFill fsuwS14">M&A Cases</button>
+                </div>
+            </div>
+            <div class="newsContainer">
+                <div class="titleBox">
+                    <h2 class="fpowM40">News & Events</h2>
+                    <a href="/" class="fmawM20">More</a>
+                </div>
+                <ul class="newsList">
+                    <li class="item01">
+                        <img src="images/kcab_news_image_01.png" alt="news content image 01">
+                        <span class="fsuwM22">In force as from 1 January 2026</span>
+                        <h3 class="fpowB38">KCAB International Revised Rules 2026</h3>
+                        <small class="fsuwM15">3 November, 2025</small>
+                        <b class="btnChip typeFill fsuwK18">Press Release</b>
+                    </li>
+                    <li class="item02">
+                        <img src="images/kcab_news_image_02.png" alt="news content image 02">
+                        <span class="fsuwM22">Invitation</span>
+                        <h3 class="fpowB38">Seoul ADR Festival 2025</h3>
+                        <small class="fsuwM15">11 September, 2025</small>
+                        <b class="btnChip typeFill fsuwK18">Notice</b>
+                    </li>
+                    <li class="item03">
+                        <img src="images/kcab_news_image_03.png" alt="news content image 03">
+                        <span class="fsuwM22">Recent and Future Directions</span>
+                        <h3 class="fpowB38">Korea as a Hub for International Arbitration</h3>
+                        <small class="fsuwM15">19 December, 2025</small>
+                        <b class="btnChip typeFill fsuwK18">Event</b>
+                    </li>
+                    <li class="item04">
+                        <img src="images/kcab_news_image_04.png" alt="news content image 04">
+                        <span class="fsuwM22">Floating Island, 3F Vista Hall</span>
+                        <h3 class="fpowB38">KCAB International Year-End Party</h3>
+                        <small class="fsuwM15">16 December, 2025</small>
+                        <b class="btnChip typeFill fsuwK18">Event</b>
+                    </li>
+                    <li class="item05">
+                        <img src="images/kcab_news_image_05.png" alt="news content image 05">
+                        <span class="fsuwM22">Palace Hotel Tokyo</span>
+                        <h3 class="fpowB38">KCAB International in Tokyo</h3>
+                        <small class="fsuwM15">26 November, 2025</small>
+                        <b class="btnChip typeFill fsuwK18">Event</b>
+                    </li>
+                    <li class="item06">
+                        <img src="images/kcab_news_image_06.png" alt="news content image 06">
+                        <span class="fsuwM22">Shangri-La Hotel Dubai</span>
+                        <h3 class="fpowB38">KCAB International in Dubai</h3>
+                        <small class="fsuwM15">11 September, 2025</small>
+                        <b class="btnChip typeFill fsuwK18">Event</b>
+                    </li>
+                </ul>
+            </div>
+            <div class="quickMenuContainer">
+                <div>
+                    <div class="leftBox">
+                        <div>
+                            <p class="fsuwS16">
+                                <b class="fsuwK20">Ready to resolve your dispute?</b>
+                                Our team is here to help you every step of the way.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rightBox">
+                        <div class="titleWrap">
+                            <mark class="fsuwB14">Quick Services</mark>
+                            <h2 class="fpowB44">
+                                <p>Start Your</p>
+                                <p>Resolution Journey</p>
+                            </h2>
+                            <p class="fsuwR17">Access our core services directly with just a few clicks. We've streamlined every process to save you time.</p>
+                        </div>
+                        <ol class="quickMenuList">
+                            <li>
+                                <span></span>
+                                <div>
+                                    <h3 class="fsuwK20">File Arbitration</h3>
+                                    <p class="fsuwR15">Submit your arbitration request online with our streamlined filing system.</p>
+                                </div>
+                                <button type="button" class="circleMore gray">learn more</button>
+                            </li>
+                            <li>
+                                <span></span>
+                                <div>
+                                    <h3 class="fsuwK20">File Mediation</h3>
+                                    <p class="fsuwR15">Resolve disputes amicably through professional mediation services.</p>
+                                </div>
+                                <button type="button" class="circleMore gray">learn more</button>
+                            </li>
+                            <li>
+                                <span></span>
+                                <div>
+                                    <h3 class="fsuwK20">Cost Calculator</h3>
+                                    <p class="fsuwR15">Estimate arbitration fees and administrative costs instantly.</p>
+                                </div>
+                                <button type="button" class="circleMore gray">learn more</button>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="contactContainer">
+                <div>
+                    <div class="titleWrap">
+                        <mark class="fsuwB14">Arbitrators</mark>
+                        <h2 class="fpowB44">
+                            <p>Connect with</p>
+                            <p>Expert</p>
+                            <p>Arbitrators</p>
+                        </h2>
+                        <p class="fsuwR17">Our panel comprises distinguished professionals from diverse legal backgrounds and industries worldwide.</p>
+                    </div>
+                </div>
+                <ol class="contactList">
+                    <li class="item01">
+                        <span></span>
+                        <h3 class="fpowB20">Find an Arbitrator</h3>
+                        <p class="fsuwR15">Search our database of 500+ qualified arbitrators by expertise, language, and nationality.</p>
+                        <a href="/" class="fsuwM14">Search Directory</a>
+                    </li>
+                    <li class="item02">
+                        <span></span>
+                        <h3 class="fpowB20">Become an Arbitrator</h3>
+                        <p class="fsuwR15">Join our distinguished panel of international arbitrators and mediators.</p>
+                        <a href="/" class="fsuwM14">Apply Now</a>
+                    </li>
+                    <li class="item03">
+                        <span></span>
+                        <h3 class="fpowB20">Arbitration Resources</h3>
+                        <p class="fsuwR15">Access rules, guidelines, model clauses, and educational materials.</p>
+                        <a href="/" class="fsuwM14">View Resources</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="topBox">
+            <div class="leftBox">
+                <h2>
+                    <img src="images/kcab_logo_white.svg" alt="KCAB International">
+                </h2>
+                <p class="fsuwM15">Korea Commercial Arbitration Board — Your trusted partner in international dispute resolution since 1966.</p>
+                <div>
+                    <ol class="snsList">
+                        <li><a href="https://www.linkedin.com/company/kcabinternational/" target="_blank">linkedin</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCtGsr3wtNSY5tLvzh5Pim9Q" target="_blank">youtube</a></li>
+                    </ol>
+                    <div class="customSelect">
+                        <button type="button" class="fpowM16">Family Site</button>
+                        <ul class="linkList fpowM16">
+                            <li><a href="/">Family Site 1</a></li>
+                            <li><a href="/">Family Site 2</a></li>
+                            <li><a href="/">Family Site 3</a></li>
+                            <li><a href="/">Family Site 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rightBox">
+                <h3 class="fpowB16">Global Offices</h3>
+                <ul>
+                    <li>
+                        <h4 class="fmawS20">
+                            Seoul
+                            <span class="fsuwR12">Headquarters</span>
+                        </h4>
+                        <address class="fsuwR12">KCAB INTERNATIONAL 43F Trade Tower, 511 Yeongdong-daero, Gangnam-gu, Seoul 06164 Korea</address>
+                        <ol class="fsuwR12">
+                            <li><a href="tel:+8225512000" class="infoTell">+82 2 551 2000</a></li>
+                            <li><a href="tel:+8225512030" class="infoTell">+82 2 551 2030</a></li>
+                            <li><a href="mailto:international@kcab.or.kr" class="infoEmail">international@kcab.or.kr</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h4 class="fmawS20">
+                            L.A.
+                            <span class="fsuwR12">Americas</span>
+                        </h4>
+                        <address class="fsuwR12">4801 Wilshire Blvd., Suite 315, LosAngeles, CA 90010, U.S.A.</address>
+                        <ol class="fsuwR12">
+                            <li><a href="tel:+13234244150" class="infoTell">+1 323 424 4150</a></li>
+                            <li><a href="mailto:sungeun.kim@kcab.or.kr" class="infoEmail">sungeun.kim@kcab.or.kr</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h4 class="fmawS20">
+                            Hanoi
+                            <span class="fsuwR12">Southeast Asia</span>
+                        </h4>
+                        <address class="fsuwR12">20F, Charmvit Tower, 117 Tran Duy Hung, Trung Hoa Ward, Cau Giay District, Hanoi. Vietnam</address>
+                        <ol class="fsuwR12">
+                            <li><a href="tel:+842432016856" class="infoTell">+84 24 32016856</a></li>
+                            <li><a href="mailto:hayoung.yoo@kcab.or.kr" class="infoEmail">hayoung.yoo@kcab.or.kr</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h4 class="fmawS20">
+                            Shanghai
+                            <span class="fsuwR12">Headquarters</span>
+                        </h4>
+                        <address class="fsuwR12">B05 Floor 3, Qiantan World Trade Center(L Space), 255 Dongyu Road, Pudong New Area, Shanghai 200126</address>
+                        <ol class="fsuwR12">
+                            <li><a href="tel:+862150208139" class="infoTell">+86 21 5020 8139</a></li>
+                            <li><a href="mailto:shanghai@kcab.or.kr" class="infoEmail">shanghai@kcab.or.kr</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottomBox">
+            <div class="innerBox">
+                <p class="fsuwS14">© KCAB International. All Rights Reserved.</p>
+                <ul class="fsuwB14">
+                    <li><a href="/">Privacy</a></li>
+                    <li><a href="/">Terms</a></li>
+                    <li><a href="/">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

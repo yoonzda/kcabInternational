@@ -1,0 +1,90 @@
+/* FONT */
+[class*="fsu"]{font-family: 'SUITE';}
+[class*="fpo"]{font-family: 'Poppins';}
+[class*="fma"]{font-family: 'Montserrat';}
+
+[class*="wEL"]{font-weight: 200;}
+[class*="wR"]{font-weight: 400;}
+[class*="wM"]{font-weight: 500;}
+[class*="wS"]{font-weight: 600;}
+[class*="wB"]{font-weight: 700;}
+[class*="wK"]{font-weight: 900;}
+
+[class*="12"]{font-size: 12px;}
+/* [class*="14"]{font-size: 14px;} */
+/* [class*="15"]{font-size: 15px;} */
+/* [class*="16"]{font-size: 16px;} */
+/* [class*="17"]{font-size: 17px;} */
+/* [class*="18"]{font-size: 18px;} */
+/* [class*="20"]{font-size: 20px;} */
+/* [class*="22"]{font-size: 22px;} */
+/* [class*="28"]{font-size: 28px;} */
+/* [class*="36"]{font-size: 36px;} */
+/* [class*="38"]{font-size: 38px;} */
+/* [class*="40"]{font-size: 40px;} */
+/* [class*="44"]{font-size: 44px;} */
+/* [class*="90"]{font-size: 90px;} */
+
+/* COLOR */
+:root{
+    --gs100: #FFF;
+    --gs200: #F8F8F8;
+    --gs800: #222;
+    --gs900: #000;
+
+    --bs400: #0083CC;
+
+    --is400: #626D84;
+
+    --vs400: #2E15B1;
+}
+.btnMenu{
+    --btn-color-black: var(--gs900);
+    --btn-color-blue: var(--bs400);
+}
+.btnSearch{
+    --btn-text: var(--gs100);
+    --btn-bg: var(--vs400);
+}
+.btnChip{
+    --btn-text: var(--gs100);
+    --btn-bg: var(--gs800);
+}
+.btnKeyword{
+    --btn-text: var(--is400);
+    --btn-bg: var(--gs200);
+}
+
+[class*="btn"].typeFill{color: var(--btn-text); background-color: var(--btn-bg);}
+
+@media screen and (max-width: 1279px){
+[class*="14"]{font-size: 13px;}
+[class*="15"]{font-size: 13px;}
+[class*="16"]{font-size: 13px;}
+    [class*="17"]{font-size: 15px;}
+[class*="18"]{font-size: 16px;}
+[class*="20"]{font-size: 16px;}
+[class*="22"]{font-size: 18px;}
+    [class*="28"]{font-size: 14px;}
+    [class*="36"]{font-size: 28px;}
+[class*="38"]{font-size: 24px;}
+[class*="40"]{font-size: 28px;}
+[class*="44"]{font-size: 30px;}
+    [class*="90"]{font-size: 36px;}
+}
+
+@media screen and (min-width: 1280px){
+[class*="14"]{font-size: 14px;}
+[class*="15"]{font-size: 15px;}
+[class*="16"]{font-size: 16px;}
+    [class*="17"]{font-size: 17px;}
+[class*="18"]{font-size: 18px;}
+[class*="20"]{font-size: 20px;}
+[class*="22"]{font-size: 22px;}
+    [class*="28"]{font-size: 28px;}
+    [class*="36"]{font-size: 36px;}
+[class*="38"]{font-size: 38px;}
+[class*="40"]{font-size: 40px;}
+[class*="44"]{font-size: 44px;}
+    [class*="90"]{font-size: 90px;}
+}
