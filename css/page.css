@@ -423,6 +423,8 @@
         color: #676F7E;
         line-height: 140%;
         margin-bottom: 24px;
+
+        word-break: keep-all;
     }
     .contactContainer .contactList li a{
         color: #676F7E;
