@@ -126,6 +126,7 @@
         background-position: calc(100% - 12px) center;
         background-repeat: no-repeat;
         cursor: pointer;
+        background-color: #FFF;
     }
     .searchContainer .searchBox .innerBox select:nth-of-type(1) {
         width: 55%;
@@ -153,6 +154,7 @@
         background-image: url('../images/kcab_icon_search_gray.svg');
         background-repeat: no-repeat;
         background-position: 18px center;
+        background-color: #FFF;
     }
     .searchContainer .searchBox .innerBox div input[type="search"]::placeholder {
         color: #626D84;
@@ -556,6 +558,7 @@
         background-position: calc(100% - 12px) center;
         background-repeat: no-repeat;
         cursor: pointer;
+        background-color: #FFF;
     }
     .searchContainer .searchBox .innerBox select:nth-of-type(1) {
         width: 25%;
@@ -582,6 +585,7 @@
         background-image: url('../images/kcab_icon_search_gray.svg');
         background-repeat: no-repeat;
         background-position: 18px center;
+        background-color: #FFF;
     }
     .searchContainer .searchBox .innerBox div input[type="search"]::placeholder {
         color: #626D84;
