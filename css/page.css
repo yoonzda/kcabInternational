@@ -1,197 +1,212 @@
-
-@media screen and (max-width: 1279px){
-    .contentWrap{
-        padding-top: 74px; 
+@media screen and (max-width: 1279px) {
+    .contentWrap {
+        padding-top: 74px;
         /* overflow: hidden;  */
         /* height: 100dvh; */
         /* box-sizing: border-box; */
     }
-
     /* ? 01. main slide */
-    .mainSlideContainer{position: relative;}
-    .mainSlideContainer .swiper-slide{
+    .mainSlideContainer {
+        position: relative;
+    }
+    .mainSlideContainer .swiper-slide {
         background-color: #FFF;
         /* max-height: 1120px; */
     }
-    .mainSlideContainer .swiper-slide .textBox{
+    .mainSlideContainer .swiper-slide .textBox {
         /* max-width: 800px; */
         /* margin: 0 auto; */
         /* padding-inline: 12%; */
         padding-inline: 4%;
-
         padding-top: 40px;
     }
-    .mainSlideContainer .swiper-slide .textBox h2{
+    .mainSlideContainer .swiper-slide .textBox h2 {
         margin-bottom: 24px;
     }
-    .mainSlideContainer .swiper-slide .textBox>p{
+    .mainSlideContainer .swiper-slide .textBox>p {
         /* width: 840px; */
         line-height: 140%;
     }
-    .mainSlideContainer .swiper-slide .imageBox{
+    .mainSlideContainer .swiper-slide .imageBox {
         position: relative;
         width: 100%;
         height: 300px;
         overflow: hidden;
         margin-top: -100px;
     }
-    .mainSlideContainer .swiper-slide img{
+    .mainSlideContainer .swiper-slide img {
         width: 100%;
         height: 300px;
         position: absolute;
-        left: 50%; top: 50%;
+        left: 50%;
+        top: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
         object-fit: cover;
     }
-    .mainSlideControl{
+    .mainSlideControl {
         width: 100px;
         height: 20px;
-
         position: absolute;
-        left: 4%; bottom: 100px;
+        left: 4%;
+        bottom: 100px;
         color: #222;
     }
-    .mainSlideControl .swiper-pagination{top: 0; height: 20px;}
-    .mainSlideControl .swiper-pagination span{display: inline-block; height: 20px; line-height: 20px;}
-    .mainSlideControl .swiper-button-prev{width: auto; height: 20px; z-index: 100; color: #222; top: auto; bottom: 0;}
-    .mainSlideControl .swiper-button-next{width: auto; height: 20px; z-index: 100; color: #222; top: auto; bottom: 0;}
-    .swiper-button-prev svg{display: none;}
-    .swiper-button-next svg{display: none;}
+    .mainSlideControl .swiper-pagination {
+        top: 0;
+        height: 20px;
+    }
+    .mainSlideControl .swiper-pagination span {
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+    }
+    .mainSlideControl .swiper-button-prev {
+        width: auto;
+        height: 20px;
+        z-index: 100;
+        color: #222;
+        top: auto;
+        bottom: 0;
+    }
+    .mainSlideControl .swiper-button-next {
+        width: auto;
+        height: 20px;
+        z-index: 100;
+        color: #222;
+        top: auto;
+        bottom: 0;
+    }
+    .swiper-button-prev svg {
+        display: none;
+    }
+    .swiper-button-next svg {
+        display: none;
+    }
     /* ? 01. main slide */
-
     /* ? 02 search */
-    .searchContainer{
+    .searchContainer {
         padding-block: 80px;
     }
-    .searchContainer h2{
+    .searchContainer h2 {
         text-align: center;
         margin-bottom: 8px;
         color: #222;
-
         line-height: 140%;
     }
-    .searchContainer p{
+    .searchContainer p {
         text-align: center;
         /* margin-bottom: 24px; */
         color: #626D84;
-
         padding-inline: 4%;
         box-sizing: border-box;
         width: 80%;
         margin: 0 auto 24px;
         line-height: 140%;
     }
-    .searchContainer .searchBox{margin-bottom: 20px;}
-    .searchContainer .searchBox .innerBox{
+    .searchContainer .searchBox {
+        margin-bottom: 20px;
+    }
+    .searchContainer .searchBox .innerBox {
         display: flex;
         gap: 8px;
-
         /* width: 840px; */
         /* margin: 0 auto; */
         flex-wrap: wrap;
-
         padding-inline: 4%;
     }
-    .searchContainer .searchBox .innerBox select{
+    .searchContainer .searchBox .innerBox select {
         border: 2px solid #2E57FD;
         border-radius: 4px;
         height: 48px;
-
         padding-left: 20px;
         color: #222;
-
         position: relative;
-
         background-image: url('../images/kcab_select_arrow.svg');
         background-position: calc(100% - 12px) center;
         background-repeat: no-repeat;
-
         cursor: pointer;
+        background-color: #FFF;
     }
-    .searchContainer .searchBox .innerBox select:nth-of-type(1){width: 55%;}
-    .searchContainer .searchBox .innerBox select:nth-of-type(2){flex: 1;}
-    .searchContainer .searchBox .innerBox div{
+    .searchContainer .searchBox .innerBox select:nth-of-type(1) {
+        width: 55%;
+    }
+    .searchContainer .searchBox .innerBox select:nth-of-type(2) {
+        flex: 1;
+    }
+    .searchContainer .searchBox .innerBox div {
         /* flex: 1; */
         width: 100%;
         position: relative;
-
         height: 48px;
         background: linear-gradient(90deg, #542DFD, #6C14FA);
         padding: 2px;
         border-radius: 4px;
         /* box-sizing: border-box; */
     }
-    .searchContainer .searchBox .innerBox div input[type="search"]{
+    .searchContainer .searchBox .innerBox div input[type="search"] {
         width: 100%;
         height: 100%;
-
         border: none;
         border-radius: 2px;
-
         padding-left: 48px;
         padding-right: 144px;
-
         background-image: url('../images/kcab_icon_search_gray.svg');
         background-repeat: no-repeat;
         background-position: 18px center;
+        background-color: #FFF;
     }
-    .searchContainer .searchBox .innerBox div input[type="search"]::placeholder{
+    .searchContainer .searchBox .innerBox div input[type="search"]::placeholder {
         color: #626D84;
     }
-    .searchContainer .searchBox .innerBox div input[type="submit"]{
+    .searchContainer .searchBox .innerBox div input[type="submit"] {
         position: absolute;
-        right: 2px; top: 2px;
-
+        right: 2px;
+        top: 2px;
         width: 125px;
         height: 48px;
-
         color: #F6F4EE;
         border: none;
         border-radius: 4px 2px 2px 4px;
         background: linear-gradient(90deg, #3400BB, #2E0099);
-
         cursor: pointer;
     }
-    .searchContainer .searchKeyword{
+    .searchContainer .searchKeyword {
         border-top: 1px dashed #C4CED8;
         /* width: 840px; */
         /* margin: 0 auto; */
         padding-top: 20px;
-
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 8px 4px;
     }
-    .searchContainer .searchKeyword button{
+    .searchContainer .searchKeyword button {
         padding: 0 20px;
         line-height: 44px;
         border-radius: 22px;
     }
-    .searchContainer .searchKeyword button::before{
+    .searchContainer .searchKeyword button::before {
         content: '# ';
     }
-
     /* ? 03 news */
-    .newsContainer{
+    .newsContainer {
         /* padding-inline: 12%; */
         padding-inline: 4%;
         /* max-width: 800px; */
         /* margin: 0 auto 120px; */
         margin-bottom: 120px;
     }
-    .newsContainer .titleBox{
+    .newsContainer .titleBox {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
         margin-bottom: 40px;
     }
-    .newsContainer h2{
+    .newsContainer h2 {
         color: #222;
     }
-    .newsContainer a{
+    .newsContainer a {
         display: block;
         padding-right: 12px;
         background-image: url('../images/kcab_icon_more_right.svg');
@@ -199,174 +214,174 @@
         background-repeat: no-repeat;
         background-size: 6px;
     }
-    .newsContainer .newsList{
+    .newsContainer .newsList {
         display: grid;
         /* grid-template-columns: repeat(1, 1fr); */
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         grid-gap: 60px;
     }
-    .newsContainer .newsList li{
+    .newsContainer .newsList li {
         display: block;
         cursor: pointer;
     }
-    .newsContainer .newsList li img{
+    .newsContainer .newsList li img {
         width: 100%;
         margin-bottom: 32px;
     }
-    .newsContainer .newsList li span{
+    .newsContainer .newsList li span {
         color: #222;
         display: block;
         margin-bottom: 8px;
     }
-    .newsContainer .newsList li h3{
+    .newsContainer .newsList li h3 {
         color: #222;
         line-height: 140%;
         margin-bottom: 8px;
     }
-    .newsContainer .newsList li small{
+    .newsContainer .newsList li small {
         color: #222;
         display: block;
         margin-bottom: 20px;
     }
-    .newsContainer .newsList li b{
+    .newsContainer .newsList li b {
         display: inline-block;
         line-height: 36px;
         padding-inline: 20px;
         border-radius: 18px;
     }
-
     /* ? 04 quick menu */
-    .quickMenuContainer{
+    .quickMenuContainer {
         background-color: #F1F1F1;
         padding-block: 80px;
     }
-    .quickMenuContainer>div{
+    .quickMenuContainer>div {
         /* padding-inline: 12%; */
         padding-inline: 4%;
         max-width: 1440px;
         margin: 0 auto;
-
         display: flex;
         flex-direction: column;
         gap: 80px;
     }
-    .quickMenuContainer .leftBox{
+    .quickMenuContainer .leftBox {
         background-image: url('../images/kcab_bg_quickMenu_simple.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-
         width: 100%;
         height: 360px;
         box-sizing: border-box;
         padding: 24px;
-
         display: flex;
         align-items: flex-end;
     }
-    .quickMenuContainer .leftBox div{
+    .quickMenuContainer .leftBox div {
         background-color: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(50px);
-
         padding: 16px 20px;
         border-radius: 12px;
         color: #FFF;
-
         width: 100%;
     }
-    .quickMenuContainer .leftBox div p{
+    .quickMenuContainer .leftBox div p {
         line-height: 140%;
     }
-    .quickMenuContainer .leftBox div p b{
+    .quickMenuContainer .leftBox div p b {
         display: block;
         margin-bottom: 4px;
     }
-    .quickMenuContainer .titleWrap{margin-bottom: 40px;}
-    .titleWrap mark{
+    .quickMenuContainer .titleWrap {
+        margin-bottom: 40px;
+    }
+    .titleWrap mark {
         background-color: transparent;
         font-style: normal;
         color: #6918FA;
-
         display: block;
         padding-left: 64px;
-
         position: relative;
         margin-bottom: 24px;
     }
-    .titleWrap mark::before{
+    .titleWrap mark::before {
         content: '';
         display: block;
         width: 52px;
         height: 1px;
         background-color: #6918FA;
-
         position: absolute;
-        left: 0; top: 6px;
+        left: 0;
+        top: 6px;
     }
-    .titleWrap h2{
+    .titleWrap h2 {
         margin-bottom: 16px;
     }
-    .titleWrap h2 p:first-of-type{
+    .titleWrap h2 p:first-of-type {
         color: #222;
     }
-    .titleWrap h2 p:not(:first-of-type){
+    .titleWrap h2 p:not(:first-of-type) {
         color: #676F7E;
     }
-    .titleWrap>p{
-        width: 400px;
+    .titleWrap>p {
+        /* width: 400px; */
         line-height: 140%;
         color: #676F7E;
     }
-    .quickMenuContainer .quickMenuList li{
+    .quickMenuContainer .quickMenuList li {
         display: flex;
         gap: 16px;
         align-items: center;
-        
         background-color: #FFF;
-
         padding: 34px 20px;
         border-radius: 16px;
-
         cursor: pointer;
     }
-    .quickMenuContainer .quickMenuList li:not(:last-of-type){
+    .quickMenuContainer .quickMenuList li:not(:last-of-type) {
         margin-bottom: 12px;
     }
-    .quickMenuContainer .quickMenuList li span{
+    .quickMenuContainer .quickMenuList li span {
         display: block;
         width: 46px;
         height: 46px;
         border-radius: 12px;
-
         background-color: #F5F4F0;
         background-repeat: no-repeat;
         background-position: center;
-
         transition: background ease-out .2s;
     }
-    .quickMenuContainer .quickMenuList li:hover span{
+    .quickMenuContainer .quickMenuList li:hover span {
         background-color: #222;
     }
-    .quickMenuContainer .quickMenuList li:nth-of-type(1) span{background-image: url('../images/kcab_icon_quick_01_black.svg');}
-    .quickMenuContainer .quickMenuList li:nth-of-type(2) span{background-image: url('../images/kcab_icon_quick_02_black.svg');}
-    .quickMenuContainer .quickMenuList li:nth-of-type(3) span{background-image: url('../images/kcab_icon_quick_03_black.svg');}
-    .quickMenuContainer .quickMenuList li:nth-of-type(1):hover span{background-image: url('../images/kcab_icon_quick_01_white.svg');}
-    .quickMenuContainer .quickMenuList li:nth-of-type(2):hover span{background-image: url('../images/kcab_icon_quick_02_white.svg');}
-    .quickMenuContainer .quickMenuList li:nth-of-type(3):hover span{background-image: url('../images/kcab_icon_quick_03_white.svg');}
-    .quickMenuContainer .quickMenuList li div{
+    .quickMenuContainer .quickMenuList li:nth-of-type(1) span {
+        background-image: url('../images/kcab_icon_quick_01_black.svg');
+    }
+    .quickMenuContainer .quickMenuList li:nth-of-type(2) span {
+        background-image: url('../images/kcab_icon_quick_02_black.svg');
+    }
+    .quickMenuContainer .quickMenuList li:nth-of-type(3) span {
+        background-image: url('../images/kcab_icon_quick_03_black.svg');
+    }
+    .quickMenuContainer .quickMenuList li:nth-of-type(1):hover span {
+        background-image: url('../images/kcab_icon_quick_01_white.svg');
+    }
+    .quickMenuContainer .quickMenuList li:nth-of-type(2):hover span {
+        background-image: url('../images/kcab_icon_quick_02_white.svg');
+    }
+    .quickMenuContainer .quickMenuList li:nth-of-type(3):hover span {
+        background-image: url('../images/kcab_icon_quick_03_white.svg');
+    }
+    .quickMenuContainer .quickMenuList li div {
         flex: 1;
     }
-    .quickMenuContainer .quickMenuList li div h3{
+    .quickMenuContainer .quickMenuList li div h3 {
         color: #222;
         margin-bottom: 8px;
     }
-    .quickMenuContainer .quickMenuList li div p{
+    .quickMenuContainer .quickMenuList li div p {
         color: #676F7E;
         line-height: 140%;
     }
-
     /* ? 05 contact */
-    .contactContainer{
+    .contactContainer {
         padding-block: 80px 160px;
         /* padding-inline: 12%; */
         padding-inline: 4%;
@@ -376,472 +391,478 @@
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: contain;
-
         margin-bottom: 40px;
     }
-    .contactContainer>div{
+    .contactContainer>div {
         /* background-image: url('../images/kcab_bg_contact.png');
         background-repeat: no-repeat;
         background-position: right center; */
-
         margin-bottom: 50px;
     }
-    .contactContainer .contactList{
+    .contactContainer .contactList {
         display: flex;
         flex-direction: column;
         gap: 12px;
     }
-    .contactContainer .contactList li{
+    .contactContainer .contactList li {
         display: block;
-
         flex: 1;
         border: 1px solid rgba(226, 228, 233, 0.5);
         border-radius: 16px;
         padding: 24px;
     }
-    .contactContainer .contactList li span{
+    .contactContainer .contactList li span {
         display: block;
         width: 40px;
         height: 40px;
         background-color: #F5F4F0;
         border-radius: 12px;
-
         margin-bottom: 24px;
-
         background-repeat: no-repeat;
         background-position: center;
     }
-    .contactContainer .contactList li:nth-of-type(1) span{background-image: url('../images/kcab_icon_contact_01.svg');}
-    .contactContainer .contactList li:nth-of-type(2) span{background-image: url('../images/kcab_icon_contact_02.svg');}
-    .contactContainer .contactList li:nth-of-type(3) span{background-image: url('../images/kcab_icon_contact_03.svg');}
-    .contactContainer .contactList li h3{
+    .contactContainer .contactList li:nth-of-type(1) span {
+        background-image: url('../images/kcab_icon_contact_01.svg');
+    }
+    .contactContainer .contactList li:nth-of-type(2) span {
+        background-image: url('../images/kcab_icon_contact_02.svg');
+    }
+    .contactContainer .contactList li:nth-of-type(3) span {
+        background-image: url('../images/kcab_icon_contact_03.svg');
+    }
+    .contactContainer .contactList li h3 {
         color: #222;
         line-height: 140%;
         margin-bottom: 4px;
     }
-    .contactContainer .contactList li p{
+    .contactContainer .contactList li p {
         color: #676F7E;
         line-height: 140%;
         margin-bottom: 24px;
-
         word-break: keep-all;
     }
-    .contactContainer .contactList li a{
+    .contactContainer .contactList li a {
         color: #676F7E;
         line-height: 140%;
-        
         display: inline-block;
         height: 20px;
-
         padding-right: 24px;
         background-image: url('../images/kcab_icon_more_gray.svg');
         background-repeat: no-repeat;
         background-position: right center;
     }
 }
-@media screen and (min-width: 1280px){
-    .contentWrap{
-        padding-top: 103px; 
+
+@media screen and (min-width: 1280px) {
+    .contentWrap {
+        padding-top: 103px;
         /* overflow: hidden;  */
         /* height: 100dvh; */
         /* box-sizing: border-box; */
     }
-
     /* ? 01. main slide */
-    .mainSlideContainer{position: relative;}
-    .mainSlideContainer .swiper-slide{
+    .mainSlideContainer {
+        position: relative;
+    }
+    .mainSlideContainer .swiper-slide {
         background-color: #FFF;
         /* max-height: 1120px; */
     }
-    .mainSlideContainer .swiper-slide .textBox{
+    .mainSlideContainer .swiper-slide .textBox {
         max-width: 1440px;
         margin: 0 auto;
         /* padding-inline: 12%; */
         padding-inline: 4%;
-
         padding-top: 140px;
     }
-    .mainSlideContainer .swiper-slide .textBox h2{
+    .mainSlideContainer .swiper-slide .textBox h2 {
         margin-bottom: 48px;
     }
-    .mainSlideContainer .swiper-slide .textBox>p{
+    .mainSlideContainer .swiper-slide .textBox>p {
         width: 840px;
         line-height: 140%;
     }
-    .mainSlideContainer .swiper-slide .imageBox{
+    .mainSlideContainer .swiper-slide .imageBox {
         position: relative;
         width: 100%;
         height: 750px;
         overflow: hidden;
         margin-top: -100px;
     }
-    .mainSlideContainer .swiper-slide img{
+    .mainSlideContainer .swiper-slide img {
         width: 100%;
         height: 750px;
         position: absolute;
-        left: 50%; top: 50%;
+        left: 50%;
+        top: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
         object-fit: cover;
     }
-    .mainSlideControl{
+    .mainSlideControl {
         width: 164px;
         height: 40px;
-
         position: absolute;
-        right: 4%; top: 80px;
+        right: 4%;
+        top: 80px;
         color: #222;
     }
-    .mainSlideControl .swiper-button-prev{width: auto; z-index: 100; color: #222;}
-    .mainSlideControl .swiper-button-next{width: auto; z-index: 100; color: #222;}
-    .swiper-button-prev svg{display: none;}
-    .swiper-button-next svg{display: none;}
+    .mainSlideControl .swiper-button-prev {
+        width: auto;
+        z-index: 100;
+        color: #222;
+    }
+    .mainSlideControl .swiper-button-next {
+        width: auto;
+        z-index: 100;
+        color: #222;
+    }
+    .swiper-button-prev svg {
+        display: none;
+    }
+    .swiper-button-next svg {
+        display: none;
+    }
     /* ? 01. main slide */
-
     /* ? 02 search */
-    .searchContainer{
+    .searchContainer {
         padding-block: 140px;
     }
-    .searchContainer h2{
+    .searchContainer h2 {
         text-align: center;
         margin-bottom: 12px;
         color: #222;
     }
-    .searchContainer p{
+    .searchContainer p {
         text-align: center;
         margin-bottom: 32px;
         color: #626D84;
     }
-    .searchContainer .searchBox{margin-bottom: 24px;}
-    .searchContainer .searchBox .innerBox{
+    .searchContainer .searchBox {
+        margin-bottom: 24px;
+    }
+    .searchContainer .searchBox .innerBox {
         display: flex;
         gap: 8px;
-
         width: 840px;
         margin: 0 auto;
     }
-    .searchContainer .searchBox .innerBox select{
+    .searchContainer .searchBox .innerBox select {
         border: 2px solid #2E57FD;
         border-radius: 4px;
         height: 48px;
-
         padding-left: 20px;
         color: #222;
-
         position: relative;
-
         background-image: url('../images/kcab_select_arrow.svg');
         background-position: calc(100% - 12px) center;
         background-repeat: no-repeat;
-
         cursor: pointer;
+        background-color: #FFF;
     }
-    .searchContainer .searchBox .innerBox select:nth-of-type(1){width: 25%;}
-    .searchContainer .searchBox .innerBox select:nth-of-type(2){width: 15%;}
-    .searchContainer .searchBox .innerBox div{
+    .searchContainer .searchBox .innerBox select:nth-of-type(1) {
+        width: 25%;
+    }
+    .searchContainer .searchBox .innerBox select:nth-of-type(2) {
+        width: 15%;
+    }
+    .searchContainer .searchBox .innerBox div {
         flex: 1;
         position: relative;
-
         height: 48px;
         background: linear-gradient(90deg, #542DFD, #6C14FA);
         padding: 2px;
         border-radius: 4px;
         box-sizing: border-box;
     }
-    .searchContainer .searchBox .innerBox div input[type="search"]{
+    .searchContainer .searchBox .innerBox div input[type="search"] {
         width: 100%;
         height: 100%;
-
         border: none;
         border-radius: 2px;
-
         padding-left: 48px;
         padding-right: 144px;
-
         background-image: url('../images/kcab_icon_search_gray.svg');
         background-repeat: no-repeat;
         background-position: 18px center;
+        background-color: #FFF;
     }
-    .searchContainer .searchBox .innerBox div input[type="search"]::placeholder{
+    .searchContainer .searchBox .innerBox div input[type="search"]::placeholder {
         color: #626D84;
     }
-    .searchContainer .searchBox .innerBox div input[type="submit"]{
+    .searchContainer .searchBox .innerBox div input[type="submit"] {
         position: absolute;
-        right: 2px; top: 2px;
-
+        right: 2px;
+        top: 2px;
         width: 125px;
         height: 44px;
-
         color: #F6F4EE;
         border: none;
         border-radius: 4px 2px 2px 4px;
         background: linear-gradient(90deg, #3400BB, #2E0099);
-
         cursor: pointer;
     }
-    .searchContainer .searchKeyword{
+    .searchContainer .searchKeyword {
         border-top: 1px dashed #C4CED8;
         width: 840px;
         margin: 0 auto;
         padding-top: 24px;
-
         display: flex;
         justify-content: center;
         gap: 6px;
     }
-    .searchContainer .searchKeyword button{
+    .searchContainer .searchKeyword button {
         padding: 0 20px;
         line-height: 44px;
         border-radius: 22px;
     }
-    .searchContainer .searchKeyword button::before{
+    .searchContainer .searchKeyword button::before {
         content: '# ';
     }
-
     /* ? 03 news */
-    .newsContainer{
+    .newsContainer {
         /* padding-inline: 12%; */
         padding-inline: 4%;
         max-width: 1440px;
         margin: 0 auto 150px;
     }
-    .newsContainer .titleBox{
+    .newsContainer .titleBox {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
         margin-bottom: 40px;
     }
-    .newsContainer h2{
+    .newsContainer h2 {
         color: #222;
     }
-    .newsContainer a{
+    .newsContainer a {
         display: block;
         padding-right: 18px;
         background-image: url('../images/kcab_icon_more_right.svg');
         background-position: right center;
         background-repeat: no-repeat;
     }
-    .newsContainer .newsList{
+    .newsContainer .newsList {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 90px 40px;
     }
-    .newsContainer .newsList li{
+    .newsContainer .newsList li {
         display: block;
         cursor: pointer;
     }
-    .newsContainer .newsList li img{
+    .newsContainer .newsList li img {
         width: 100%;
         margin-bottom: 32px;
     }
-    .newsContainer .newsList li span{
+    .newsContainer .newsList li span {
         color: #222;
         display: block;
         margin-bottom: 8px;
     }
-    .newsContainer .newsList li h3{
+    .newsContainer .newsList li h3 {
         color: #222;
         margin-bottom: 8px;
     }
-    .newsContainer .newsList li small{
+    .newsContainer .newsList li small {
         color: #222;
         display: block;
         margin-bottom: 20px;
     }
-    .newsContainer .newsList li b{
+    .newsContainer .newsList li b {
         display: inline-block;
         line-height: 36px;
         padding-inline: 20px;
         border-radius: 18px;
     }
-
     /* ? 04 quick menu */
-    .quickMenuContainer{
+    .quickMenuContainer {
         background-color: #F1F1F1;
         padding-block: 80px;
     }
-    .quickMenuContainer>div{
+    .quickMenuContainer>div {
         /* padding-inline: 12%; */
         padding-inline: 4%;
         max-width: 1440px;
         margin: 0 auto;
-
         display: flex;
         gap: 90px;
     }
-    .quickMenuContainer .leftBox{
+    .quickMenuContainer .leftBox {
         background-image: url('../images/kcab_bg_quickMenu_simple.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-
         width: 530px;
         height: 661px;
         box-sizing: border-box;
         padding: 24px;
-
         display: flex;
         align-items: flex-end;
     }
-    .quickMenuContainer .leftBox div{
+    .quickMenuContainer .leftBox div {
         background-color: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(50px);
-
         padding: 20px;
         border-radius: 12px;
         color: #FFF;
     }
-    .quickMenuContainer .leftBox div p{
+    .quickMenuContainer .leftBox div p {
         line-height: 140%;
     }
-    .quickMenuContainer .leftBox div p b{
+    .quickMenuContainer .leftBox div p b {
         display: block;
         margin-bottom: 4px;
     }
-    .quickMenuContainer .titleWrap{margin-bottom: 50px;}
-    .titleWrap mark{
+    .quickMenuContainer .titleWrap {
+        margin-bottom: 50px;
+    }
+    .titleWrap mark {
         background-color: transparent;
         font-style: normal;
         color: #6918FA;
-
         display: block;
         padding-left: 80px;
-
         position: relative;
         margin-bottom: 32px;
     }
-    .titleWrap mark::before{
+    .titleWrap mark::before {
         content: '';
         display: block;
         width: 64px;
         height: 1px;
         background-color: #6918FA;
-
         position: absolute;
-        left: 0; top: 6px;
+        left: 0;
+        top: 6px;
     }
-    .titleWrap h2{
+    .titleWrap h2 {
         margin-bottom: 24px;
     }
-    .titleWrap h2 p:first-of-type{
+    .titleWrap h2 p:first-of-type {
         color: #222;
     }
-    .titleWrap h2 p:not(:first-of-type){
+    .titleWrap h2 p:not(:first-of-type) {
         color: #676F7E;
     }
-    .titleWrap>p{
+    .titleWrap>p {
         width: 400px;
         line-height: 140%;
         color: #676F7E;
     }
-    .quickMenuContainer .quickMenuList li{
+    .quickMenuContainer .quickMenuList li {
         display: flex;
         gap: 24px;
         align-items: center;
-        
         background-color: #FFF;
-
         padding: 34px;
         border-radius: 16px;
-
         cursor: pointer;
     }
-    .quickMenuContainer .quickMenuList li:not(:last-of-type){
+    .quickMenuContainer .quickMenuList li:not(:last-of-type) {
         margin-bottom: 24px;
     }
-    .quickMenuContainer .quickMenuList li span{
+    .quickMenuContainer .quickMenuList li span {
         display: block;
         width: 56px;
         height: 56px;
         border-radius: 12px;
-
         background-color: #F5F4F0;
         background-repeat: no-repeat;
         background-position: center;
-
         transition: background ease-out .2s;
     }
-    .quickMenuContainer .quickMenuList li:hover span{
+    .quickMenuContainer .quickMenuList li:hover span {
         background-color: #222;
     }
-    .quickMenuContainer .quickMenuList li:nth-of-type(1) span{background-image: url('../images/kcab_icon_quick_01_black.svg');}
-    .quickMenuContainer .quickMenuList li:nth-of-type(2) span{background-image: url('../images/kcab_icon_quick_02_black.svg');}
-    .quickMenuContainer .quickMenuList li:nth-of-type(3) span{background-image: url('../images/kcab_icon_quick_03_black.svg');}
-    .quickMenuContainer .quickMenuList li:nth-of-type(1):hover span{background-image: url('../images/kcab_icon_quick_01_white.svg');}
-    .quickMenuContainer .quickMenuList li:nth-of-type(2):hover span{background-image: url('../images/kcab_icon_quick_02_white.svg');}
-    .quickMenuContainer .quickMenuList li:nth-of-type(3):hover span{background-image: url('../images/kcab_icon_quick_03_white.svg');}
-    .quickMenuContainer .quickMenuList li div{
+    .quickMenuContainer .quickMenuList li:nth-of-type(1) span {
+        background-image: url('../images/kcab_icon_quick_01_black.svg');
+    }
+    .quickMenuContainer .quickMenuList li:nth-of-type(2) span {
+        background-image: url('../images/kcab_icon_quick_02_black.svg');
+    }
+    .quickMenuContainer .quickMenuList li:nth-of-type(3) span {
+        background-image: url('../images/kcab_icon_quick_03_black.svg');
+    }
+    .quickMenuContainer .quickMenuList li:nth-of-type(1):hover span {
+        background-image: url('../images/kcab_icon_quick_01_white.svg');
+    }
+    .quickMenuContainer .quickMenuList li:nth-of-type(2):hover span {
+        background-image: url('../images/kcab_icon_quick_02_white.svg');
+    }
+    .quickMenuContainer .quickMenuList li:nth-of-type(3):hover span {
+        background-image: url('../images/kcab_icon_quick_03_white.svg');
+    }
+    .quickMenuContainer .quickMenuList li div {
         flex: 1;
     }
-    .quickMenuContainer .quickMenuList li div h3{
+    .quickMenuContainer .quickMenuList li div h3 {
         color: #222;
         margin-bottom: 8px;
     }
-    .quickMenuContainer .quickMenuList li div p{
+    .quickMenuContainer .quickMenuList li div p {
         color: #676F7E;
         line-height: 140%;
     }
-
     /* ? 05 contact */
-    .contactContainer{
+    .contactContainer {
         padding-block: 160px;
         /* padding-inline: 12%; */
         padding-inline: 4%;
         max-width: 1440px;
         margin: 0 auto;
     }
-    .contactContainer>div{
+    .contactContainer>div {
         background-image: url('../images/kcab_bg_contact.png');
         background-repeat: no-repeat;
         background-position: right center;
-
         margin-bottom: 50px;
     }
-    .contactContainer .contactList{
+    .contactContainer .contactList {
         display: flex;
         gap: 24px;
     }
-    .contactContainer .contactList li{
+    .contactContainer .contactList li {
         display: block;
-
         flex: 1;
         border: 1px solid rgba(226, 228, 233, 0.5);
         border-radius: 16px;
         padding: 34px;
     }
-    .contactContainer .contactList li span{
+    .contactContainer .contactList li span {
         display: block;
         width: 48px;
         height: 48px;
         background-color: #F5F4F0;
         border-radius: 12px;
-
         margin-bottom: 24px;
-
         background-repeat: no-repeat;
         background-position: center;
     }
-    .contactContainer .contactList li:nth-of-type(1) span{background-image: url('../images/kcab_icon_contact_01.svg');}
-    .contactContainer .contactList li:nth-of-type(2) span{background-image: url('../images/kcab_icon_contact_02.svg');}
-    .contactContainer .contactList li:nth-of-type(3) span{background-image: url('../images/kcab_icon_contact_03.svg');}
-    .contactContainer .contactList li h3{
+    .contactContainer .contactList li:nth-of-type(1) span {
+        background-image: url('../images/kcab_icon_contact_01.svg');
+    }
+    .contactContainer .contactList li:nth-of-type(2) span {
+        background-image: url('../images/kcab_icon_contact_02.svg');
+    }
+    .contactContainer .contactList li:nth-of-type(3) span {
+        background-image: url('../images/kcab_icon_contact_03.svg');
+    }
+    .contactContainer .contactList li h3 {
         color: #222;
         line-height: 140%;
         margin-bottom: 12px;
     }
-    .contactContainer .contactList li p{
+    .contactContainer .contactList li p {
         color: #676F7E;
         line-height: 140%;
         margin-bottom: 36px;
     }
-    .contactContainer .contactList li a{
+    .contactContainer .contactList li a {
         color: #676F7E;
         line-height: 140%;
-        
         display: inline-block;
         height: 20px;
-
         padding-right: 28px;
         background-image: url('../images/kcab_icon_more_gray.svg');
         background-repeat: no-repeat;
