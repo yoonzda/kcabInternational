@@ -76,6 +76,18 @@ function animateWaveText(waveEl) {
 }
 
 // function animateWaveText(waveEl) {
+//   const text = waveEl.getAttribute("data-text");
+
+//   waveEl.innerHTML = text
+//     .split(" ")
+//     .map((word, idx) => {
+//       if (word === "") return " ";
+//       return `<p class="word fonwR68" style="display: inline-block; animation-delay:${idx * 150}ms">${word}</p>`;
+//     })
+//     .join(" ");
+// }
+
+// function animateWaveText(waveEl) {
 //   const text = waveEl.dataset.text;
 //   waveEl.innerHTML = "";
 

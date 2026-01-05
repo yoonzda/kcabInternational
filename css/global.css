@@ -970,6 +970,7 @@ select {
     footer .topBox .leftBox .snsList li a {
         display: block;
         text-indent: -9999px;
+        height: inherit;
     }
     footer .topBox .leftBox .customSelect {
         width: 218px;
