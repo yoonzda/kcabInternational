@@ -446,6 +446,9 @@
     }
     .subContent>div div img{
         width: 100%;
+        display: block;
+        max-width: 460px;
+        margin: 0 auto;
     }
     .subContent>div div:has(p){
         flex: 1;
