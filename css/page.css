@@ -1236,10 +1236,10 @@
     .detailPage.titleBox h3{font-size: 36px; font-weight: 500; color: #222; line-height: 140%;}
     .detailPage.contentBox{padding-bottom: 50px; border-bottom: 1px solid #DDD; margin-bottom: 60px;}
     .detailPage.contentBox img{width: 100%; margin-bottom: 32px;}
-    .detailPage.contentBox ul{list-style: none; margin-bottom: 60px;}
-    .detailPage.contentBox ul li:not(:last-of-type){margin-bottom: 60px;}
-    .detailPage.contentBox ul li h4{font-size: 22px; font-weight: 600; color: #222; line-height: 140%;}
-    .detailPage.contentBox ul li p{margin-top: 16px; font-size: 18px; font-weight: 400; line-height: 150%; color: #434343;}
+    .detailPage.contentBox ul.textBox{list-style: none; margin-bottom: 60px;}
+    .detailPage.contentBox ul.textBox li:not(:last-of-type){margin-bottom: 60px;}
+    .detailPage.contentBox ul.textBox li h4{font-size: 22px; font-weight: 600; color: #222; line-height: 140%;}
+    .detailPage.contentBox ul.textBox li p{margin-top: 16px; font-size: 18px; font-weight: 400; line-height: 150%; color: #434343;}
     .detailPage.bottomText{margin-bottom: 60px;}
     .detailPage.bottomText p{font-size: 20px; font-weight: 400; color: #222; line-height: 140%;}
     .detailPage.bottomText p b{font-weight: 700;}
@@ -1252,4 +1252,25 @@
     .buttonBox a{width: 240px; height: 60px; line-height: 60px; text-align: center; box-sizing: border-box;}
     .buttonBox .listButton{font-size: 16px; font-weight: 700; color: #FFF; background-color: #294DC7;}
     .buttonBox .linkButton{font-size: 16px; font-weight: 600; color: #999; background-color: #FFF; border: 1px solid #DDDDDD;}
+
+    .listType2{list-style: none; margin-bottom: 80px;}
+    .listType2 li{display: flex; gap: 20px; align-items: center; cursor: pointer;}
+    .listType2 li:not(:last-of-type){margin-bottom: 44px;}
+    .listType2 li img{width: 420px;}
+    .listType2 li div{flex: 1;}
+    .listType2 li div mark{font-size: 16px; font-weight: 600; line-height: 140%; color: #294DC7; display: block; margin-bottom: 4px;}
+    .listType2 li div p{font-size: 20px; font-weight: 500; line-height: 140%; color: #222; margin-bottom: 16px;}
+    .listType2 li div span{font-size: 16px; font-weight: 400; line-height: 140%; color: #626D84; display: block; margin-bottom: 28px;}
+    .listType2 li div a{display: inline-block; padding-inline: 18px 38px; height: 40px; line-height: 40px; font-size: 14px; font-weight: 600; background-repeat: no-repeat; background-position: calc(100% - 16px) center;}
+    .listType2 li.active div a{border: 1px solid #121212; color: #121212; background-color: #FFF; background-image: url('../images/kcab_icon_left_black.svg');}
+    .listType2 li.deactive div a{color: #999; background-color: #EBEBEB; background-image: url('../images/kcab_icon_left_gray.svg');}
+
+    .detailPage.infoBox{margin-bottom: 32px;}
+    .detailPage.infoBox li{display: flex; align-items: center; gap: 12px;}
+    .detailPage.infoBox li:not(:last-of-type){margin-bottom: 12px;}
+    .detailPage.infoBox li p{font-size: 18px; font-weight: 400; line-height: 150%; color: #434343;}
+    .registerButton{display: inline-block; padding-inline: 18px 38px; height: 40px; line-height: 40px; font-size: 14px; font-weight: 600; background-repeat: no-repeat; background-position: calc(100% - 16px) center;}
+    .registerButton{border: 1px solid #121212; color: #121212; background-color: #FFF; background-image: url('../images/kcab_icon_left_black.svg');}
+
+
 }

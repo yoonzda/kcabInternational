@@ -23,6 +23,8 @@ input:focus{outline: none;}
     display: none;
 }
 
+mark{font-style: normal; background-color: transparent;}
+
 @media screen and (max-width: 1279px) {
     header {
         position: fixed;
