@@ -955,6 +955,58 @@
     .accountBox p{font-size: 16px; font-weight: 400; line-height: 150%; color: #434343;}
     .accountBox p mark{color: #294DC7;}
     .accountBox small{font-size: 14px; font-weight: 400; line-height: 150%; color: #666;}
+    
+    .eventTraining{list-style: none;}
+    .eventTraining>li:not(:last-of-type){margin-bottom: 48px;}
+    .eventTraining h3{font-size: 24px; font-weight: 500; color: #222; line-height: 140%; margin-bottom: 16px;}
+    .eventTraining h3.underline{padding-bottom: 20px; border-bottom: 1px solid #121212;}
+
+    .eventTrainingSlide ul{}
+    .eventTrainingSlide ul li{max-width: 970px; width: 80%; display: block;}
+    .eventTrainingSlide ul li img{width: 100%;}
+
+    .slideControl {
+        width: 120px;
+        height: 32px;
+        position: absolute;
+        right: 6%;
+        bottom: 20px;
+        transform: translate(-50%, 0);
+        color: #FFF;
+        z-index: 1;
+    }
+    .slideControl .swiper-button-prev {
+        width: auto; height: 40px;
+        z-index: 100;
+        color: #FFF;
+        left: 0;
+    }
+    .slideControl .swiper-button-next {
+        width: auto; height: 40px;
+        z-index: 100;
+        color: #FFF;
+        right: 0;
+    }
+    .slideControl{font-size: 20px; font-weight: 600;}
+    .swiper-button-prev::after{
+        display: none;
+    }
+    .swiper-button-next::after{
+        display: none;
+    }
+    .eventTrainingSlide .swiper-pagination-progressbar{position: static; height: 7px; background-color: #f5f5f5; border-radius: 4px;}
+    .eventTrainingSlide .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{position: static; display: block; height: 7px; background-color: #294DC7; border-radius: 4px;}
+    
+    .eventTraining p{font-size: 16px; font-weight: 400; line-height: 150%; color: #434343; margin-bottom: 28px;}
+    .eventTraining .contentBox{border: 1px solid #EBEBEB; padding: 20px;}
+    .eventTraining .contentBox:not(:last-of-type){margin-bottom: 28px;}
+    .eventTraining .contentBox ol{list-style: none; display: flex; flex-direction: column; gap: 20px;}
+    .eventTraining .contentBox ol>li{flex: 1;}
+    .eventTraining .contentBox ul{list-style: none;}
+    .eventTraining .contentBox ul>li{position: relative; padding-left: 12px; font-size: 14px; font-weight: 400; color: #434343; line-height: 150%;}
+    .eventTraining .contentBox ul>li:not(:last-of-type){margin-bottom: 12px;}
+    .eventTraining .contentBox ul>li::before{content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; background-color: #2A2E52; position: absolute; left: 0; top: 10px;}
+    .eventTraining .contentBox h4{font-size: 16px; font-weight: 500; line-height: 150%; color: #222; margin-bottom: 12px;}
 }
 
 .wave {
@@ -978,6 +1030,8 @@
     opacity: 1;
   }
 }
+
+.listType3 li a{display: block;}
 
 @media screen and (min-width: 1280px) {
     .contentWrap {
