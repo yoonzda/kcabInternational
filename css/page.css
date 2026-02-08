@@ -1522,7 +1522,7 @@
     ol.listType7 .accordionContent ul li p{font-size: 18px; font-weight: 400; color: #434343; line-height: 150%;}
     ol.listType7 .accordionContent ul li a{font-weight: 600; color: #26A5FF; text-decoration: underline;}
 
-    .downloadBox{background-color: #F9F9F9; border-bottom: 2px solid #DDD; display: flex; justify-content: space-between; padding: 20px 32px;}
+    .downloadBox{background-color: #F9F9F9; border-bottom: 2px solid #DDD; display: flex; justify-content: space-between; padding: 20px 32px; align-items: center;}
     .downloadBox ul{list-style: none; font-size: 15px; font-weight: 400; color: #2A3E82; line-height: 140%; flex: 1;}
     .downloadBox ol{display: flex; list-style: none; gap: 6px;}
     
@@ -1657,4 +1657,32 @@
     .popWrap .bottomBox table td ul{list-style: none;}
     .popWrap .bottomBox table td ul li{position: relative; padding-left: 12px;}
     .popWrap .bottomBox table td ul li::before{content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; background-color: #294DC7; position: absolute; left: 0; top: 8px;}
+
+    .listType9{list-style: none; margin-top: 100px;}
+    .listType9>li:not(:last-of-type){margin-bottom: 100px;}
+    .listType9 h3{font-size: 24px; font-weight: 500; line-height: 140%; color: #222; padding-left: 12px; position: relative; margin-bottom: 24px; border-bottom: 1px solid #121212; padding-bottom: 20px;}
+    .listType9 h3::before{content: ''; display: block; position: absolute; left: 0; top: 7px; width: 3px; height: 18px; background-color: #294DC7;}
+    .listType9>p{font-size: 18px; font-weight: 400; line-height: 150%; color: #434343; margin-bottom: 18px;}
+    .listType9>li>p{font-size: 18px; font-weight: 400; line-height: 150%; color: #434343; margin-bottom: 18px;}
+
+    .listType9+.sub03{margin-top: 100px;}
+
+    .listType10{list-style: none;}
+    .listType10>li:not(:last-of-type){margin-bottom: 28px;}
+    .listType10 p{position: relative; padding-left: 40px; font-size: 18px; font-weight: 400; color: #434343; line-height: 28px;}
+    .listType10 p span{position: absolute; left: 0; top: 0; background-color: rgba(41, 77, 199, 0.05); color: #294DC7; font-size: 13px; font-weight: 700; display: block; width: 28px; height: 28px; text-align: center; line-height: 28px; border-radius: 3px;}
+    
+    .listType10 .tableWrap{margin-top: 28px;}
+    .listType10 table{width: 100%;}
+    .listType10 table thead th:not(:last-of-type){border-right: 1px solid rgba(255, 255, 255, 0.3);}
+    .listType10 table thead th{background-color: #2A3E82; color: #FFF; text-align: center; font-size: 16px; font-weight: 500; padding-block: 14px;}
+    .listType10 table tbody th{background-color: #FAFAFA; border-right: 1px solid #DDD; font-size: 15px; font-weight: 400; color: #222; padding-block: 14px;}
+    .listType10 table tbody tr{border-bottom: 1px solid #DDD;}
+    .listType10 table tbody td{text-align: center; font-size: 15px; font-weight: 400; color: #434343;}
+    
+    .accountBox{}
+    .accountBox div{margin-bottom: 24px;}
+    .accountBox p{font-size: 18px; font-weight: 400; line-height: 150%; color: #434343;}
+    .accountBox p mark{color: #294DC7;}
+    .accountBox small{font-size: 16px; font-weight: 400; line-height: 150%; color: #666;}
 }
