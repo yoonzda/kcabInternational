@@ -126,4 +126,8 @@ function mediatorPopFunction(){
     $('.mediator.pop button').click(function(){
         $('.mediator.pop').removeClass('active');
     });
+
+    $('.cardList>li').click(function(){
+        $('.mediator.pop').addClass('active');
+    });
 }
