@@ -98,6 +98,17 @@ function tabButtonFunction(){
         $('#'+tabID).addClass('active');
 
     });
+
+    $('.subTabButtonBox button').click(function(){
+        var tabID = $(this).attr('data-tabName');
+
+        $('.subTabButtonBox button').removeClass('active');
+        $(this).addClass('active');
+
+        $('.subTabContent').removeClass('active');
+        $('#'+tabID).addClass('active');
+
+    });
 }
 
 function accordionFunction(){
@@ -114,6 +125,22 @@ function accordionFunction(){
         $('.accordionContent').stop().slideUp(300);
         $(this).parents().siblings().removeClass('active');
         $(this).next('.accordionContent').stop().slideToggle(300);
+        $(this).parents().toggleClass('active');
+    });
+    
+    $('.listType12 .listType13').hide();
+    $('.listType12 h4').click(function() {
+        $('.listType13').stop().slideUp(300);
+        $(this).parents().siblings().removeClass('active');
+        $(this).next('.listType13').stop().slideToggle(300);
+        $(this).parents().toggleClass('active');
+    });
+
+    $('.listType13 .listType14').hide();
+    $('.listType13 .accordionContent').click(function() {
+        $('.listType14').stop().slideUp(300);
+        $(this).parents().siblings().removeClass('active');
+        $(this).next('.listType14').stop().slideToggle(300);
         $(this).parents().toggleClass('active');
     });
 }

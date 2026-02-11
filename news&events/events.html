@@ -243,18 +243,21 @@
             </ol>
             <div class="fon">
                 <ul class="tabButtonBox">
-                    <li><button type="button" data-tabName="allEvents">All Events</button></li>
+                    <li><button type="button" class="active" data-tabName="allEvents">All Events</button></li>
                     <li><button type="button" data-tabName="seoulADRFestival">Seoul ADR Festival</button></li>
-                    <li><button type="button" class="active" data-tabName="trainingProgram">Training Program</button></li>
+                    <li><button type="button" data-tabName="trainingProgram">Training Program</button></li>
                 </ul>
-                <div class="tabContent" id="allEvents">
+                <div class="tabContent active" id="allEvents">
                     <div class="searchBox fon">
                         <input type="search" placeholder="Please enter a search term."/>
                         <button type="button">Search</button>
                     </div>
                     <ul class="listType2">
                         <li onclick="location.href='../news&events/events_detail.html'" class="active">
-                            <img src="../images/kcab_sub05_image_01.png" alt="example image 01">
+                            <div class="eventImageBox">
+                                <img src="../images/kcab_event_markImage_speaker.png" alt="marker image speaker" class="markerImage">
+                                <img src="../images/kcab_sub05_image_01.png" alt="example image 01">
+                            </div>
                             <div>
                                 <mark>19 December 2025 (PST)</mark>
                                 <p>[Event] Korea as a Hub for International Arbitration: Recent and Future Directions</p>
@@ -383,7 +386,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="tabContent active" id="trainingProgram">
+                <div class="tabContent" id="trainingProgram">
                     <ol class="eventTraining">
                         <li>
                             <h3>Training Program</h3>

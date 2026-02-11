@@ -1105,6 +1105,8 @@ mark{font-style: normal; background-color: transparent;}
     }
 }
 
+.subVisual.sub02{background-image: url('../images/kcab_bg_sub02_left.png');}
+.subVisual.sub02::after{background-image: url('../images/kcab_bg_sub02_right.png');}
 .subVisual.sub03{background-image: url('../images/kcab_bg_sub03_left.png');}
 .subVisual.sub03::after{background-image: url('../images/kcab_bg_sub03_right.png');}
 .subVisual.sub04{background-image: url('../images/kcab_bg_sub04_left.png');}
@@ -1114,3 +1116,9 @@ mark{font-style: normal; background-color: transparent;}
 
 .tabContent:not(.active){display: none;}
 .tabContent.active{display: block;}
+.subTabContent:not(.active){display: none;}
+.subTabContent.active{display: block;}
+
+.fileIcon{width: 20px;}
+.eventImageBox{position: relative; width: 420px;}
+.eventImageBox .markerImage{position: absolute; right: 0; top: 0; width: 112px;}

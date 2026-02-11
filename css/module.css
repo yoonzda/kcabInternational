@@ -113,3 +113,5 @@
 }
 
 .ellipsisText{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+a.colorBlue{color: #26A5FF; text-decoration: underline;}
