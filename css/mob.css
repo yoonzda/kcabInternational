@@ -743,8 +743,9 @@
     .tabButtonBox li button {
         width: 100%;
         font-size: 15px;
-        height: 60px;
+        height: 100%;
         padding-inline: 12px;
+        padding-block: 12px;
     }
     .tabButtonBox li button:not(.active) {
         font-weight: 400;
@@ -1330,6 +1331,14 @@
     }
     ol.listType7>li:not(.active) span.deactive {
         display: active;
+    }
+    ol.listType7 .accordionBox b {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 140%;
+        color: #222;
+        display: block;
+        margin-bottom: 20px;
     }
     ol.listType7 .accordionBox p {
         font-size: 18px;
@@ -2112,25 +2121,209 @@
         color: #222;
         margin-bottom: 12px;
     }
-    .sub02Content {}
-    .sub02Content>div:not(:last-of-type) {
-        margin-bottom: 100px;
+    /* 기존 내용 끝 */
+    .downloadButton {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #FFF;
+        line-height: 140%;
+        background-color: #294DC7;
+        padding-block: 8px;
+        padding-inline: 12px 48px;
+        border-radius: 5px;
+        background-image: url('../images/kcab_icon_download_white.svg');
+        background-position: calc(100% - 12px) center;
+        background-repeat: no-repeat;
+        background-size: 14px;
     }
-    .sub02Content h3 {
-        font-size: 36px;
+    ul.listType7 {
+        list-style: none;
+    }
+    ul.listType7 li {
+        border: 1px solid #DDD;
+        padding-block: 24px;
+        padding-inline: 24px;
+    }
+    ul.listType7 li:not(:last-of-type) {
+        margin-bottom: 12px;
+    }
+    ul.listType7 li p {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 150%;
+        color: #434343;
+        padding-left: 16px;
+        position: relative;
+    }
+    ul.listType7 li p::before {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        background-color: #294DC7;
+    }
+    ol.listType7 {
+        list-style: none;
+    }
+    ol.listType7>li {
+        border: 1px solid #F2F2F2;
+        background-color: #FAFCFF;
+        padding: 40px;
+    }
+    ol.listType7>li:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+    ol.listType7>li.active {
+        border-color: #121212;
+        background-color: #FFF;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    }
+    ol.listType7 .accordionBox {
+        cursor: pointer;
+    }
+    ol.listType7 .accordionBox h4 {
+        font-size: 24px;
         font-weight: 500;
         color: #222;
-        line-height: 140%;
+        display: flex;
+        align-items: center;
         margin-bottom: 24px;
     }
-    .sub02Content>div>p {
+    ol.listType7 .accordionBox h4 span {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 140%;
+        color: #294DC7;
+        display: inline-block;
+        margin-left: auto;
+    }
+    ol.listType7>li.active span.active {
+        display: block;
+    }
+    ol.listType7>li:not(.active) span.active {
+        display: none;
+    }
+    ol.listType7>li.active span.deactive {
+        display: none;
+    }
+    ol.listType7>li:not(.active) span.deactive {
+        display: active;
+    }
+    ol.listType7 .accordionBox b {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 140%;
+        color: #222;
+        display: block;
+        /* margin-bottom: 24px; */
+    }
+    ol.listType7 .accordionBox p {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 140%;
+        color: #222;
+        padding-left: 12px;
+        position: relative;
+        /*margin-bottom: 24px;*/
+    }
+    ol.listType7 .accordionBox p::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 6px;
+        width: 3px;
+        height: 18px;
+        background-color: #294DC7;
+    }
+    ol.listType7 .accordionContent {
+        border-top: 1px solid #121212;
+        padding-top: 24px;
+        margin-top: 24px;
+    }
+    ol.listType7 .accordionContent ul {
+        list-style: none;
+    }
+    ol.listType7 .accordionContent ul li:not(:last-of-type) {
+        margin-bottom: 16px;
+    }
+    ol.listType7 .accordionContent ul li p {
         font-size: 18px;
         font-weight: 400;
         color: #434343;
         line-height: 150%;
     }
+    ol.listType7 .accordionContent ul li a {
+        font-weight: 600;
+        color: #26A5FF;
+        text-decoration: underline;
+    }
+    ol.listType7 .accordionContent ol {
+        list-style: none;
+    }
+    ol.listType7 .accordionContent ol li:not(:last-of-type) {
+        margin-bottom: 16px;
+    }
+    ol.listType7 .accordionContent ol li p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+        color: #434343;
+    }
+    ol.listType7 .accordionContent ol li span {
+        color: #294DC7;
+        font-weight: 600;
+    }
+    .sub02Accordion {
+        display: flex;
+        margin-bottom: 24px;
+        flex-wrap: wrap;
+        gap: 24px;
+        flex-direction: column;
+    }
+    .sub02Accordion>li {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sub02Accordion ol {
+        list-style: none;
+    }
+    .sub02Accordion ol li {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 140%;
+        color: #222;
+    }
+    .sub02Accordion ol li::before {
+        content: '- ';
+    }
+    .sub02Content {
+        font-family: 'Onest';
+    }
+    .sub02Content>div:not(:last-of-type) {
+        margin-bottom: 48px;
+    }
+    .sub02Content h3 {
+        font-size: 24px;
+        font-weight: 500;
+        color: #222;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+    .sub02Content>div>p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #434343;
+        line-height: 150%;
+    }
     .sub02Content>div>p:not(:last-of-type) {
-        margin-bottom: 18px;
+        margin-bottom: 12px;
     }
     .sub02Content .visualImage {
         width: 100%;
@@ -2354,6 +2547,7 @@
         line-height: 150%;
         color: #434343;
         cursor: pointer;
+        word-break: break-all;
     }
     .listType14 {
         border-top: 1px solid #121212;
@@ -2629,27 +2823,6 @@
     .subTable textarea {
         height: 80px;
     }
-    .downloadBox {
-        background-color: #F9F9F9;
-        border-bottom: 2px solid #DDD;
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 32px;
-        align-items: center;
-    }
-    .downloadBox ul {
-        list-style: none;
-        font-size: 15px;
-        font-weight: 400;
-        color: #2A3E82;
-        line-height: 140%;
-        flex: 1;
-    }
-    .downloadBox ol {
-        display: flex;
-        list-style: none;
-        gap: 6px;
-    }
     .bgBlue {
         background-color: #F8FAFF;
         border-bottom: 1px solid #7A99FF;
@@ -2674,91 +2847,6 @@
         font-weight: 400;
         color: #434343;
         line-height: 150%;
-    }
-    .scrolllList {
-        display: flex;
-        gap: 30px;
-    }
-    .scrollLeftBox {
-        width: 270px;
-        height: 780px;
-        overflow: auto;
-    }
-    .scrollRightBox {
-        flex: 1;
-        border: 1px solid #DDD;
-        height: 780px;
-        overflow: auto;
-        box-sizing: border-box;
-    }
-    .scrollLeftBox {
-        list-style: none;
-    }
-    .scrollLeftBox>li {
-        background-color: #D4EEF5;
-        padding: 16px 20px 20px;
-        list-style-position: inside;
-    }
-    .scrollLeftBox>li:not(:last-of-type) {
-        border-bottom: 1px solid #FFF;
-    }
-    .scrollLeftBox>li>p {
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 140%;
-        color: #2A2E52;
-        margin-bottom: 12px;
-    }
-    .scrollLeftBox>li h4 {
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 140%;
-        color: #2A2E52;
-    }
-    .scrollLeftBox>li ul {
-        list-style: none;
-        padding-top: 16px;
-        padding-inline: 20px;
-    }
-    .scrollLeftBox>li ul li {
-        position: relative;
-        padding-left: 10px;
-    }
-    .scrollLeftBox>li ul li:not(:last-of-type) {
-        margin-bottom: 14px;
-    }
-    .scrollLeftBox>li ul li::before {
-        content: '';
-        display: block;
-        width: 3px;
-        height: 3px;
-        border-radius: 50%;
-        background-color: #2A2E52;
-        position: absolute;
-        left: 0;
-        top: 6px;
-    }
-    .scrollLeftBox>li ul li a {
-        font-size: 14px;
-        font-weight: 100;
-        color: #2A2E52;
-        line-height: 130%;
-    }
-    .scrollLeftBox {
-        counter-reset: number 0;
-    }
-    .scrollLeftBox>li h4 {
-        position: relative;
-        padding-left: 20px;
-    }
-    .scrollLeftBox>li h4::before {
-        counter-increment: number 1;
-        content: counter(number) '. ';
-        position: absolute;
-        left: 0;
-    }
-    .scrollRightBox {
-        padding: 40px;
     }
     .listType8 {
         list-style: none;
