@@ -266,10 +266,10 @@
                     <li>
                         <h3>Fee Calculator</h3>
                         <ul class="subTabButtonBox smallButton">
-                            <li><button type="button" class="active" data-tabName="feeCalculator2026">2026 Fee Calculator</button></li>
-                            <li><button type="button" data-tabName="feeCalculatorBefore">Fee Calculator Before 2026</button></li>
+                            <li><button type="button" data-tabName="feeCalculator2026">2026 Fee Calculator</button></li>
+                            <li><button type="button" class="active" data-tabName="feeCalculatorBefore">Fee Calculator Before 2026</button></li>
                         </ul>
-                        <div class="subTabContent active" id="feeCalculator2026">
+                        <div class="subTabContent" id="feeCalculator2026">
                             <div class="feeWrap">
                                 <div class="leftBox">
                                     <h5>Amount in Dispute</h5>
@@ -352,11 +352,434 @@
                             </div>
                             <a href="" download class="downloadButton">Download Payment Instructions</a>
                         </div>
-                        <div class="subTabContent" id="feeCalculatorBefore">
-                            
+                        <div class="subTabContent active" id="feeCalculatorBefore">
+                            <div class="feeWrap">
+                                <div class="leftBox">
+                                    <h5>Amount in Dispute</h5>
+                                    <div class="buttonBox" style="margin-top: 0;">
+                                        <div class="feeInput">
+                                            <input type="text" name="" id="">
+                                            <span>KRW</span>
+                                        </div>
+                                        <button type="submit" class="listButton">Calculator</button>
+                                    </div>
+                                </div>
+                                <div class="rightBox">
+                                    <h5>Arbitration Cost Results</h5>
+                                    <div>
+                                        <div class="feeInput">
+                                            <label for="fee01">Filling Fee</label>
+                                            <div class="infoBox">
+                                                <p>
+                                                    [N/A When Claim does not exceed 200,000,000KRW]
+                                                    <b>1,000,000 KRW</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <div class="feeInput">
+                                                    <label for="fee02">Admin Fee</label>
+                                                    <input type="text" name="" id="fee02">
+                                                    <span>KRW</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="feeInput">
+                                                    <label for="fee03">Arbitrator Fee</label>
+                                                    <input type="text" name="" id="fee03">
+                                                    <span>KRW</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="feeInput">
+                                                    <label for="fee04">Min</label>
+                                                    <input type="text" name="" id="fee04">
+                                                    <span>KRW</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="feeInput">
+                                                    <label for="fee05">Max</label>
+                                                    <input type="text" name="" id="fee05">
+                                                    <span>KRW</span>
+                                                </div>
+                                                <p class="infoText">triple, when there are 3 arbitrators</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="feeInput" style="padding-bottom: 0;">
+                                            <label for="fee06">Total Fee</label>
+                                            <input type="text" name="" id="fee06">
+                                            <span>KRW</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </li>
                 </ul>
+                <ol class="sub03 fon accountBox">
+                    <li>
+                        <h3>Schedule of Fees and Expenses<small style="margin-left: 12px;">Unit: KRW</small></h3>
+                        <div class="tableWrap">
+                            <table class="feeTable">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">Amount in Dispute</th>
+                                        <th colspan="6">under the "International Arbitration Rules" of KCAB</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Administrative Fees</th>
+                                        <th>Minimum Arbitrator's Fee</th>
+                                        <th>Maximum Arbitrator's Fee</th>
+                                        <th>Average Arbitrator's Fee</th>
+                                        <th>Filing Fees</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10,000,000</td>
+                                        <td>50,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>400,000</td>
+                                        <td>0</td>
+                                        <td>450,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10,000,001</td>
+                                        <td>50,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>400,000</td>
+                                        <td>0</td>
+                                        <td>450,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20,000,000</td>
+                                        <td>90,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>400,000</td>
+                                        <td>0</td>
+                                        <td>490,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30,000,000</td>
+                                        <td>135,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>400,000</td>
+                                        <td>0</td>
+                                        <td>535,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50,000,000</td>
+                                        <td>225,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>400,000</td>
+                                        <td>0</td>
+                                        <td>625,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50,000,001</td>
+                                        <td>225,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>600,000</td>
+                                        <td>0</td>
+                                        <td>825,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>80,000,000</td>
+                                        <td>360,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>900,000</td>
+                                        <td>0</td>
+                                        <td>1,260,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100,000,000</td>
+                                        <td>450,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>1,100,000</td>
+                                        <td>0</td>
+                                        <td>1,550,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100,000,001</td>
+                                        <td>450,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>1,100,000</td>
+                                        <td>0</td>
+                                        <td>1,550,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>130,000,000</td>
+                                        <td>540,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>1,320,000</td>
+                                        <td>0</td>
+                                        <td>1,860,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>150,000,000</td>
+                                        <td>600,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>1,470,000</td>
+                                        <td>0</td>
+                                        <td>2,070,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>180,000,000	</td>
+                                        <td>690,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>1,700,000</td>
+                                        <td>0</td>
+                                        <td>2,390,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>200,000,000</td>
+                                        <td>750,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>1,850,000</td>
+                                        <td>0</td>
+                                        <td>2,600,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>200,000,001</td>
+                                        <td>1,800,000</td>
+                                        <td>2,250,000</td>
+                                        <td>7,500,000</td>
+                                        <td>4,870,000</td>
+                                        <td>1,000,000</td>
+                                        <td>7,670,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>500,000,000</td>
+                                        <td>3,300,000</td>
+                                        <td>4,500,000</td>
+                                        <td>16,500,000</td>
+                                        <td>10,500,000</td>
+                                        <td>1,000,000</td>
+                                        <td>14,800,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>500,000,001</td>
+                                        <td>3,300,000</td>
+                                        <td>4,500,000</td>
+                                        <td>16,500,000</td>
+                                        <td>10,500,000</td>
+                                        <td>1,000,000</td>
+                                        <td>14,800,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>800,000,000</td>
+                                        <td>4,800,000</td>
+                                        <td>6,000,000</td>
+                                        <td>24,900,000</td>
+                                        <td>15,450,000</td>
+                                        <td>1,000,000</td>
+                                        <td>21,250,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1,000,000,000</td>
+                                        <td>5,800,000</td>
+                                        <td>7,000,000</td>
+                                        <td>30,500,000</td>
+                                        <td>18,750,000</td>
+                                        <td>1,000,000</td>
+                                        <td>25,550,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1,000,000,001</td>
+                                        <td>5,800,000</td>
+                                        <td>7,000,000</td>
+                                        <td>30,500,000</td>
+                                        <td>18,750,000</td>
+                                        <td>1,000,000</td>
+                                        <td>25,550,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2,000,000,000</td>
+                                        <td>10,800,000</td>
+                                        <td>9,500,000</td>
+                                        <td>40,500,000</td>
+                                        <td>25,000,000</td>
+                                        <td>1,000,000</td>
+                                        <td>36,800,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5,000,000,000</td>
+                                        <td>25,800,000</td>
+                                        <td>17,000,000</td>
+                                        <td>70,500,000</td>
+                                        <td>43,750,000</td>
+                                        <td>1,000,000</td>
+                                        <td>70,550,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5,000,000,001</td>
+                                        <td>25,800,000</td>
+                                        <td>17,000,000</td>
+                                        <td>70,500,000</td>
+                                        <td>43,750,000</td>
+                                        <td>1,000,000</td>
+                                        <td>70,550,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7,500,000,000</td>
+                                        <td>32,050,000</td>
+                                        <td>18,000,000</td>
+                                        <td>75,500,000</td>
+                                        <td>46,750,000</td>
+                                        <td>1,000,000</td>
+                                        <td>79,800,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10,000,000,000</td>
+                                        <td>38,300,000</td>
+                                        <td>19,000,000</td>
+                                        <td>80,500,000</td>
+                                        <td>49,750,000</td>
+                                        <td>1,000,000</td>
+                                        <td>89,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10,000,000,001</td>
+                                        <td>38,300,000</td>
+                                        <td>19,000,000</td>
+                                        <td>80,500,000</td>
+                                        <td>49,750,000</td>
+                                        <td>1,000,000</td>
+                                        <td>89,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30,000,000,000</td>
+                                        <td>78,300,000</td>
+                                        <td>24,000,000</td>
+                                        <td>100,500,000</td>
+                                        <td>62,250,000</td>
+                                        <td>1,000,000</td>
+                                        <td>141,550,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40,000,000,000</td>
+                                        <td>98,300,000</td>
+                                        <td>26,500,000</td>
+                                        <td>110,500,000</td>
+                                        <td>68,500,000</td>
+                                        <td>1,000,000</td>
+                                        <td>167,800,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50,000,000,000</td>
+                                        <td>118,300,000</td>
+                                        <td>29,000,000</td>
+                                        <td>120,500,000</td>
+                                        <td>74,750,000</td>
+                                        <td>1,000,000</td>
+                                        <td>194,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50,000,000,001</td>
+                                        <td>118,300,000</td>
+                                        <td>29,000,000</td>
+                                        <td>120,500,000</td>
+                                        <td>74,750,000</td>
+                                        <td>1,000,000</td>
+                                        <td>194,050,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>75,000,000,000</td>
+                                        <td>150,000,000</td>
+                                        <td>32,750,000</td>
+                                        <td>38,000,000</td>
+                                        <td>85,370,000</td>
+                                        <td>1,000,000</td>
+                                        <td>236,370,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100,000,000,000</td>
+                                        <td>150,000,000</td>
+                                        <td>36,500,000</td>
+                                        <td>155,500,000</td>
+                                        <td>96,000,000</td>
+                                        <td>1,000,000</td>
+                                        <td>247,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100,000,000,001</td>
+                                        <td>150,000,000</td>
+                                        <td>36,500,000</td>
+                                        <td>155,500,000</td>
+                                        <td>96,000,000</td>
+                                        <td>1,000,000</td>
+                                        <td>247,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>200,000,000,000</td>
+                                        <td>150,000,000</td>
+                                        <td>43,500,000</td>
+                                        <td>185,500,000</td>
+                                        <td>114,500,000</td>
+                                        <td>1,000,000</td>
+                                        <td>265,500,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>300,000,000,000</td>
+                                        <td>150,000,000</td>
+                                        <td>50,500,000</td>
+                                        <td>215,500,000</td>
+                                        <td>133,000,000</td>
+                                        <td>1,000,000</td>
+                                        <td>284,000,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Unquantified Claim</td>
+                                        <td>3,000,000</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>1,500,000</td>
+                                        <td>0</td>
+                                        <td>4,500,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="tableBottomText">
+                                <p><mark class="colorBlue">*</mark> When the amount in dispute is below 200 million KRW in an expedited procedure case, the arbitrator’s fee shall be the minimum amount as specified in the fee schedule in Appendix 2 (Article 1) of KCAB International Arbitration Rules.</p>
+                                <p>However, in expedited procedure cases where the Secretariat appoints the arbitrator in accordance with Article 45 Section 1 of the Rules, the above Average Arbitrator's fee schedule applies.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>KCAB International Bank Account Number:</h3>
+                        <div>
+                            <p><mark>KRW</mark> : Woori Bank (SWIFT CODE: HVBKKRSE) - Trade Center Branch, Seoul, Account No. 424-05-001415</p>
+                            <p>Address : 511 Yeongdong-daero, Trade Tower, Gangnam-gu, Seoul, 06164, Republic of Korea</p>
+                        </div>
+                        <div>
+                            <p><mark>USD or EUR</mark>: Woori Bank (SWIFT CODE: HVBKKRSEXXX) - Trade Center Branch, Seoul, Account No. 1081-700-282123</p>
+                            <p>Address : 511 Yeongdong-daero, Trade Tower, Gangnam-gu, Seoul, 06164, Republic of Korea</p>
+                        </div>
+                        <small>*VAT excluded, if the fees are transferred from abroad to the KCAB in foreign currency.</small>
+                    </li>
+                </ol>
             </div>
         </div>
     </div>
