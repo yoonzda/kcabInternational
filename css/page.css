@@ -1927,7 +1927,7 @@
 
     .subTable textarea{height: 80px;}
 
-    .downloadBox{background-color: #F9F9F9; border-bottom: 2px solid #DDD; display: flex; justify-content: space-between; padding: 20px 32px; align-items: center;}
+    .downloadBox{background-color: #F9F9F9; border-bottom: 2px solid #DDD; display: flex; justify-content: space-between; padding: 20px 32px; align-items: center; gap: 8px;}
     .downloadBox ul{list-style: none; font-size: 15px; font-weight: 400; color: #2A3E82; line-height: 140%; flex: 1;}
     .downloadBox ol{display: flex; list-style: none; gap: 6px;}
         
@@ -2234,4 +2234,32 @@
 
     .tableBottomText{margin-top: 16px;}
     .tableBottomText p{font-size: 14px; font-weight: 400; line-height: 130%; color: #666;}
+
+    /* 0214 02Arbitration - 02Rules */
+    [class*="rulesList"]{list-style: none;}
+    .rulesList_dep1>li:not(:last-of-type){margin-bottom: 20px;}
+    .rulesList_dep1>li{display: flex; gap: 8px; font-size: 16px; font-weight: 400; color: #434343; line-height: 150%;}
+    .rulesList_dep2{padding-top: 12px;}
+    .rulesList_dep2>li:not(:last-of-type){margin-bottom: 8px;}
+    .rulesList_dep2>li{display: flex; gap: 8px; font-size: 15px; font-weight: 400; color: #666; line-height: 150%;}
+    .rulesList_dep3{padding-top: 8px;}
+    .rulesList_dep3>li:not(:last-of-type){margin-bottom: 4px;}
+    .rulesList_dep3>li{display: flex; gap: 8px; font-size: 14px; font-weight: 400; color: #888; line-height: 150%;}
+    
+    .tableWrap:has(.rulesTable){padding-block: 12px;}
+    .rulesTable{width: 100%;}
+    .rulesTable thead tr:not(:last-of-type){border-bottom: 1px solid rgba(255, 255, 255, 0.3);}
+    .rulesTable th{background-color: #2A3E82; color: #FFF; vertical-align: middle; font-size: 16px; font-weight: 500; line-height: 140%; text-align: center; padding: 12px;}
+    .rulesTable th:not(:last-of-type){border-right: 1px solid rgba(255, 255, 255, 0.3);}
+    .rulesTable td{background-color: #FFF; color: #434343; vertical-align: middle; font-size: 15px; font-weight: 400; line-height: 130%; text-align: center; padding: 12px;}
+    .rulesTable td:not(:last-of-type){border-right: 1px solid #DDD;}
+    .rulesTable tbody tr{border-bottom: 1px solid #DDD;}
+
+    .rulesHistory{list-style: none; display: flex; gap: 8px; margin-bottom: 60px;}
+    .rulesHistory>li{font-size: 15px; font-weight: 400; line-height: 140%; width: 120px; padding-block: 12px; text-align: center;}
+    .rulesHistory>li.active{background-color: #121212; color: #FFF;}
+    .rulesHistory>li:not(.active){background-color: #F6F6F6; color: #666; border: 1px solid #E5E5E5;}
+    .rulesHistory>li a{display: block;}
+    .rulesHistory.downloadBox{flex-direction: column; align-items: flex-start; gap: 16px;}
+    .rulesHistory.downloadBox ol{flex-wrap: wrap;}
 }
