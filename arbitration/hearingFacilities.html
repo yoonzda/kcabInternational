@@ -249,10 +249,10 @@
             </ol>
             <div class="sub02Content">
                 <ul class="tabButtonBox">
-                    <li><button type="button" class="active" data-tabName="facilities">A Look at Facilities</button></li>
-                    <li><button type="button" data-tabName="bookings">Bookings</button></li>
+                    <li><button type="button" data-tabName="facilities">A Look at Facilities</button></li>
+                    <li><button type="button" class="active" data-tabName="bookings">Bookings</button></li>
                 </ul>
-                <div class="tabContent active" id="facilities">
+                <div class="tabContent" id="facilities">
                     <h3>A Look at Facilities</h3>
                     <ul class="subTabButtonBox">
                         <li><button type="button" class="active" data-tabName="room1">Extra Large.Hearing Room 1</button></li>
@@ -442,8 +442,262 @@
                         </ul>
                     </div>
                 </div>
-                <div class="tabContent" id="bookings">
-                    2
+                <div class="tabContent active" id="bookings">
+                    <ul class="subBooking">
+                        <li>
+                            <h3>Room Rates<small>Unit: KRW, VAT included</small></h3>
+                            <div class="tableWrap">
+                                <table class="roomTable">
+                                    <colgroup>
+                                        <col width="8%"/>
+                                        <col width="8%"/>
+                                        <col width="14%"/>
+                                        <col width="14%"/>
+                                        <col width="14%"/>
+                                        <col width="14%"/>
+                                        <col width="14%"/>
+                                        <col width="14%"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2">Rooms</th>
+                                            <th rowspan="2">Capacity(㎡)</th>
+                                            <th colspan="3">Weekdays (Mon. ~ Fri.)</th>
+                                            <th colspan="3">Weekends and Public Holiday</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Full Day</th>
+                                            <th>Half Day</th>
+                                            <th>Extension of Booking (Hourly Charge)</th>
+                                            <th>Full Day</th>
+                                            <th>Half Day</th>
+                                            <th>Extension of Booking (Hourly Charge)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="8">Standard Rates</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Hearing Room 1</td>
+                                            <td>175.8</td>
+                                            <td>2,640,000</td>
+                                            <td>1,584,000</td>
+                                            <td>396,000</td>
+                                            <td>3,960,000</td>
+                                            <td>2,376,000</td>
+                                            <td>594,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hearing Room 2</td>
+                                            <td>49.2</td>
+                                            <td>858,000</td>
+                                            <td>514,800</td>
+                                            <td>132,000</td>
+                                            <td>1,293,600</td>
+                                            <td>778,800</td>
+                                            <td>198,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hearing Room 3</td>
+                                            <td>49.2</td>
+                                            <td>858,000</td>
+                                            <td>514,800</td>
+                                            <td>132,000</td>
+                                            <td>1,293,600</td>
+                                            <td>778,800</td>
+                                            <td>198,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hearing Room 4</td>
+                                            <td>55.0</td>
+                                            <td>924,000</td>
+                                            <td>554,400</td>
+                                            <td>145,200</td>
+                                            <td>1,386,000</td>
+                                            <td>831,600</td>
+                                            <td>211,200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hearing Room 5</td>
+                                            <td>168.56</td>
+                                            <td>2,296,800</td>
+                                            <td>1,386,000</td>
+                                            <td>343,200</td>
+                                            <td>3,445,200</td>
+                                            <td>2,085,600</td>
+                                            <td>514,800</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="8">Package Rates<span>* Arbitrators' Lounge Included</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td>Hearing Room 1</td>
+                                            <td>175.8</td>
+                                            <td>2,640,000</td>
+                                            <td>1,584,000</td>
+                                            <td>396,000</td>
+                                            <td>3,960,000</td>
+                                            <td>2,376,000</td>
+                                            <td>594,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hearing Room 2</td>
+                                            <td>49.2</td>
+                                            <td>462,000</td>
+                                            <td>277,200</td>
+                                            <td>79,200</td>
+                                            <td>699,600</td>
+                                            <td>422,400</td>
+                                            <td>105,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hearing Room 3</td>
+                                            <td>49.2</td>
+                                            <td>462,000</td>
+                                            <td>277,200</td>
+                                            <td>79,200</td>
+                                            <td>699,600</td>
+                                            <td>422,400</td>
+                                            <td>105,600</td>
+                                        </tr>
+                                        <tr class="totalRow">
+                                            <td>Total</td>
+                                            <td>274.2</td>
+                                            <td>3,564,000</td>
+                                            <td>2,138,400</td>
+                                            <td>554,400</td>
+                                            <td>5,359,200</td>
+                                            <td>3,220,800</td>
+                                            <td>805,200</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <small><mark class="colorBlue">*</mark> For uses other than the minimum rent hours and regular business hours (Weekdays 09:00 ~ 18:00), an hourly fee per excess time shall be charged in addition to regular room rates.</small>
+                        </li>
+                        <li>
+                            <h3>Additional Services<small>Unit: KRW, VAT included</small></h3>
+                            <div class="tableWrap">
+                                <table class="serviceTable">
+                                    <colgroup>
+                                        <col widht="38%"/>
+                                        <col widht="24%"/>
+                                        <col widht="38%"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>Equipment Rentals</th>
+                                            <th>Rates(ea/a day)</th>
+                                            <th>Remarks</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1. Camera Packages for Video Conferencing</td>
+                                            <td>330,000</td>
+                                            <td>- Portable Camera Packages, IT Support excluded</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. Web Cameras for Laptops</td>
+                                            <td>55,000</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3. Laptops, Tablet PCs, TV Screens, Monitors</td>
+                                            <td>110,000</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4. Projectors & Screens</td>
+                                            <td>220,000</td>
+                                            <td>- Laptops excluded</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. Wireless Microphones</td>
+                                            <td>11,000</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6. Extension Speakers</td>
+                                            <td>22,000</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7. Wireless Headsets</td>
+                                            <td>22,000</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>8. Recorders</td>
+                                            <td>11,000</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>9. Visualizers(Document Cameras)</td>
+                                            <td>22,000</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10. Tele Conferencing Devices</td>
+                                            <td>50,000 +∂</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11. Other Requests(Bundle Shipping, Document Shredding)</td>
+                                            <td rowspan="2"></td>
+                                            <td rowspan="2">- 20% of Service Charge</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="borderR">12. On-Site IT Support for Video Conferencing</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>Bookings</h3>
+                            <ul class="bookingIconList">
+                                <li>
+                                    <div>
+                                        Make an Enquiry
+                                        <a href="mailto:centre@kcab.or.kr">centre@kcab.or.kr</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Booking Form
+                                        <span>Submission</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Notice of
+                                        <span>Confirmation</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        Payment & Booking
+                                        <span>Complete</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="bookingColorBox">
+                                <ul>
+                                    <li>
+                                        <h4>Payment</h4>
+                                        <p>Where a request for reservation of rooms is made, a non-refundable deposit of ten percent(10%) of the total room charges is required in order to confirm the reservation and remaining(90%) of the total room charges is required 7 days prior to the first day of the booking start date.</p>
+                                        <p>Where a request for reservation of room is made within 7 days from the starting date of intended use, full payment of the total room charges is required to secure the reservation.</p>
+                                    </li>
+                                    <li>
+                                        <h4>Cancellation</h4>
+                                        <p>The deposit of ten percent(10%) of the total room charges is forfeited in the event of any cancellation. If the cancellation is made less than 7 days prior to the first day of the booking start date, the total room charges must be paid in full.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
