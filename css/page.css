@@ -2748,11 +2748,11 @@
     .subModelClause{}
     .subModelClause h3{font-size: 36px; font-weight: 500; color: #222; line-height: 140%; margin-bottom: 60px;}
     .subModelClause ul{list-style: none;}
-    .subModelClause ul li:not(:last-of-type){margin-bottom: 100px;}
-    .subModelClause ul li h4{font-size: 24px; font-weight: 500; color: #222; padding-left: 12px; padding-bottom: 20px; border-bottom: 1px solid #121212; position: relative; margin-bottom: 28px;}
-    .subModelClause ul li h4::before{content: ''; display: block; width: 3px; height: 18px; background-color: #294DC7; position: absolute; left: 0; top: 3px;}
-    .subModelClause ul li p{font-size: 18px; font-weight: 400; line-height: 150%; color: #434343;}
-    .subModelClause ul li>p{margin-bottom: 28px;}
+    .subModelClause>ul>li:not(:last-of-type){margin-bottom: 100px;}
+    .subModelClause>ul>li h4{font-size: 24px; font-weight: 500; color: #222; padding-left: 12px; padding-bottom: 20px; border-bottom: 1px solid #121212; position: relative; margin-bottom: 28px;}
+    .subModelClause>ul>li h4::before{content: ''; display: block; width: 3px; height: 18px; background-color: #294DC7; position: absolute; left: 0; top: 3px;}
+    .subModelClause>ul>li p{font-size: 18px; font-weight: 400; line-height: 150%; color: #434343;}
+    .subModelClause>ul>li>p{margin-bottom: 28px;}
 
     /* 0215 Arbitrators > Fees */
     .tableWrap:has(.feeTable){overflow-x: auto;}

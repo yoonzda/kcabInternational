@@ -8,7 +8,7 @@
         position: sticky;
         top: 120px;
     }
-    .subContent aside h3{color: #222; margin-bottom: 24px;}
+    .subContent aside h3{color: #222; margin-bottom: 24px; line-height: 140%;}
     .subContent aside ol{border-top: 1px solid #EBEBEB;}
     .subContent aside ol li{border-bottom: 1px solid #EBEBEB; display: block; padding: 24px 16px; font-size: 15px; font-weight: 400; line-height: 140%; position: relative;}
     .subContent aside ol li.active,

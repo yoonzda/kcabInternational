@@ -1113,6 +1113,8 @@ mark{font-style: normal; background-color: transparent;}
 .subVisual.sub04::after{background-image: url('../images/kcab_bg_sub04_right.png');}
 .subVisual.sub05{background-image: url('../images/kcab_bg_sub05_left.png');}
 .subVisual.sub05::after{background-image: url('../images/kcab_bg_sub05_right.png');}
+.subVisual.sub06{background-image: url('../images/kcab_bg_sub06_left.png');}
+.subVisual.sub06::after{background-image: url('../images/kcab_bg_sub06_right.png');}
 
 .tabContent:not(.active){display: none;}
 .tabContent.active{display: block;}
