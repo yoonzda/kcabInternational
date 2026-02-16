@@ -1442,9 +1442,11 @@
     .rulesTabContent h3{margin-top: 48px;}
 
     .rulesPDFBox{background-color: #F9F9F9; border-bottom: 2px solid #DDD; padding: 16px 20px;}
+    .subModelClause .rulesPDFBox p{font-size: 13px; font-weight: 400; color: #2A3E82; margin-bottom: 16px;}
     .rulesPDFBox p{font-size: 13px; font-weight: 400; color: #2A3E82; margin-bottom: 16px;}
     .rulesPDFBox a{font-size: 14px; font-weight: 400; line-height: 150%; color: #434343; display: block; text-decoration: underline;}
     .rulesPDFBox a:not(:last-of-type){margin-bottom: 8px;}
+    .subModelClause .rulesPDFBox a,
     .rulesPDFBox a:hover{font-weight: 600; color: #26A5FF;}
 
     /* 0215 Arbitrators > Code of Ethics for Arbitrators */
@@ -1456,11 +1458,11 @@
     .subModelClause{}
     .subModelClause h3{font-size: 24px; font-weight: 500; color: #222; line-height: 140%; margin-bottom: 24px;}
     .subModelClause ul{list-style: none;}
-    .subModelClause ul li:not(:last-of-type){margin-bottom: 48px;}
-    .subModelClause ul li h4{font-size: 24px; font-weight: 500; color: #222; padding-left: 12px; padding-bottom: 20px; border-bottom: 1px solid #121212; position: relative; margin-bottom: 28px;}
-    .subModelClause ul li h4::before{content: ''; display: block; width: 3px; height: 18px; background-color: #294DC7; position: absolute; left: 0; top: 3px;}
-    .subModelClause ul li p{font-size: 16px; font-weight: 400; line-height: 150%; color: #434343;}
-    .subModelClause ul li>p{margin-bottom: 28px;}
+    .subModelClause>ul>li:not(:last-of-type){margin-bottom: 48px;}
+    .subModelClause>ul>li h4{font-size: 24px; font-weight: 500; color: #222; padding-left: 12px; padding-bottom: 20px; border-bottom: 1px solid #121212; position: relative; margin-bottom: 28px;}
+    .subModelClause>ul>li h4::before{content: ''; display: block; width: 3px; height: 18px; background-color: #294DC7; position: absolute; left: 0; top: 3px;}
+    .subModelClause>ul>li p{font-size: 16px; font-weight: 400; line-height: 150%; color: #434343;}
+    .subModelClause>ul>li>p{margin-bottom: 28px;}
 
     /* 0215 Arbitrators > Fees */
     .tableWrap:has(.feeTable){overflow-x: auto;}
@@ -1509,6 +1511,15 @@
     .bookingColorBox ul li h4{font-size: 18px; font-weight: 500; color: #2A3E82; margin-bottom: 12px;}
     .bookingColorBox ul li p{font-size: 14px; font-weight: 400; line-height: 150%; color: #434343;}
     .bookingColorBox ul li p:not(:last-of-type){margin-bottom: 16px;}
+
+    /* 0216 sub06 > Korean Court Decisions on Arbitration detail */
+    .pdfWrap{border: 1px solid #DDD; height: 70dvh; margin-bottom: 40px;}
+    .arbitratorDetail tr td div:has(img){display: flex; gap: 16px;}
+    
+    /* 0216 sub06 > Korean Arbitration Law */
+    .enforcementList{padding-left: 40px; font-size: 16px; font-weight: 400; line-height: 150%; color: #434343; margin-bottom: 20px;}
+    .enforcementList li{display: flex;}
+    .enforcementList li::before{content: '- ';}
 }
 
 /* pc */
@@ -2734,9 +2745,12 @@
     .rulesTabContent h3{margin-top: 100px;}
 
     .rulesPDFBox{background-color: #F9F9F9; border-bottom: 2px solid #DDD; padding: 20px 32px;}
+    .subModelClause .rulesPDFBox p{font-size: 15px; font-weight: 400; color: #2A3E82; margin-bottom: 16px;}
     .rulesPDFBox p{font-size: 15px; font-weight: 400; color: #2A3E82; margin-bottom: 16px;}
     .rulesPDFBox a{font-size: 16px; font-weight: 400; line-height: 150%; color: #434343; display: block; text-decoration: underline;}
     .rulesPDFBox a:not(:last-of-type){margin-bottom: 8px;}
+    
+    .subModelClause .rulesPDFBox a,
     .rulesPDFBox a:hover{font-weight: 600; color: #26A5FF;}
 
     /* 0215 Arbitrators > Code of Ethics for Arbitrators */
@@ -2798,4 +2812,25 @@
     .bookingColorBox ul li h4{font-size: 20px; font-weight: 500; color: #2A3E82; margin-bottom: 12px;}
     .bookingColorBox ul li p{font-size: 18px; font-weight: 400; line-height: 150%; color: #434343;}
     .bookingColorBox ul li p:not(:last-of-type){margin-bottom: 16px;}
+
+    /* 0216 sub06 > Korean Court Decisions on Arbitration detail */
+    .pdfWrap{border: 1px solid #DDD; height: 1200px; margin-bottom: 60px;}
+    .arbitratorDetail tr td div:has(img){display: flex; gap: 16px;}
+
+    /* 0216 sub06 > Korean Arbitration Law */
+    .enforcementList{padding-left: 40px; font-size: 18px; font-weight: 400; line-height: 150%; color: #434343; margin-bottom: 28px;}
+    .enforcementList li{display: flex;}
+    .enforcementList li::before{content: '- ';}
+
+    /* 0216 sub06 > Korean Court Decisions on Arbitration */
+    .decisionList{border-top: 2px solid #003E7F; list-style: none; margin-bottom: 60px;}
+    .decisionList>li{padding: 40px 24px; border-bottom: 1px solid #DDD;}
+    .decisionList>li>span{font-size: 16px; font-weight: 600; line-height: 140%; color: #294DC7; display: block; margin-bottom: 4px;}
+    .decisionList>li h5{font-size: 20px; font-weight: 500; line-height: 140%; color: #222; margin-bottom: 24px;}
+    
+    .decisionDetailList{background-color: #FAFAFA; display: flex; list-style: none;}
+    .decisionDetailList>li{padding-block: 20px; padding-inline: 2% 4%; position: relative; box-sizing: border-box;}
+    .decisionDetailList>li:not(:last-of-type)::after{content: ''; display: block; width: 1px; height: 80%; background-color: #F1F1F1; position: absolute; right: 0; top: 10%;}
+    .decisionDetailList>li>span{font-size: 16px; font-weight: 500; color: #2A3E82; line-height: 140%; display: block; margin-bottom: 12px;}
+    .decisionDetailList ol{list-style: none; font-size: 14px; font-weight: 300; color: #626D84; line-height: 140%;}
 }
