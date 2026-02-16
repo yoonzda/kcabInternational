@@ -169,3 +169,24 @@ function mediatorPopFunction(){
         $('.mediator.pop').addClass('active');
     });
 }
+
+const mediaQuery = window.matchMedia("(max-width: 1279px)");
+
+function handleMediaQuery(e) {
+  if(e.matches){
+    console.log(1);
+    $('.scrollLeftBox>li h4+ul').hide();
+    $('.scrollLeftBox>li h4').click(function() {
+        $('.scrollLeftBox>li h4+ul').stop().slideUp(300);
+        $(this).next('ul').stop().slideToggle(300);
+    });
+  }else{
+
+  }
+}
+
+// 최초 실행
+handleMediaQuery(mediaQuery);
+
+// 변경 감지
+mediaQuery.addEventListener("change", handleMediaQuery);

@@ -702,7 +702,7 @@
         font-size: 14px; font-weight: 400; color: #0F1A2E; border: 1px solid #3D557F;
     }
 
-    .tabButtonBox{display: flex; list-style: none; margin-bottom: 28px; flex-wrap: wrap;}
+    .tabButtonBox{display: flex; list-style: none; margin-bottom: 28px; flex-wrap: wrap; flex-direction: column;}
     .tabButtonBox li{flex: 1;}
     .tabButtonBox li button{
         width: 100%;
@@ -786,7 +786,7 @@
     .listType6 .tableWrap{border: 1px solid #DDD; border-radius: 3px; overflow: hidden;}
     .listType6 .tableWrap table{width: 100%;}
     .listType6 .tableWrap table tr:not(:last-of-type){border-bottom: 1px solid #DDD;}
-    .listType6 .tableWrap table th{background-color: rgba(250, 250, 250, 0.8); font-size: 14px; font-weight: 400; color: #434343; line-height: 150%; padding-block: 14px; padding-inline: 24px; text-align: left; width: 120px; border-right: 1px solid #DDD; vertical-align: middle;}
+    .listType6 .tableWrap table th{background-color: rgba(250, 250, 250, 0.8); font-size: 14px; font-weight: 400; color: #434343; line-height: 150%; padding-block: 14px; padding-inline: 16px; text-align: left; width: 120px; border-right: 1px solid #DDD; vertical-align: middle;}
     .listType6 .tableWrap table td{vertical-align: middle;}
     .listType6 .tableWrap table td:has(p){padding-inline: 24px; padding-block: 8px;}
     .listType6 .tableWrap table td:not(:has(p)){padding: 8px; box-sizing: border-box;}
@@ -795,8 +795,8 @@
     .listType6 .reqText{display: block; text-align: right; font-size: 14px; font-weight: 400; line-height: 150%; color: #666; margin-bottom: 8px;}
     .listType6 .reqText mark{color: #26A5FF;}
     .listType6 .tableWrap table td input::placeholder{color: #999;}
-    .listType6 .tableWrap table td input{width: 100%; height: 54px; box-sizing: border-box; border-radius: 3px; border: 1px solid #DDD; padding-inline: 20px; font-size: 14px; font-weight: 400; line-height: 130%; color: #666;}
-    .listType6 .tableWrap table td select{width: 100%; height: 54px; border: 1px solid #DDD; border-radius: 3px; padding-inline: 20px; font-size: 14px; font-weight: 400; line-height: 130%; color: #666; background-image: url('../images/kcab_select_arrow_666.svg'); background-repeat: no-repeat; background-position: calc(100% - 24px) center;}
+    .listType6 .tableWrap table td input{width: 100%; height: 54px; box-sizing: border-box; border-radius: 3px; border: 1px solid #DDD; padding-inline: 16px; font-size: 14px; font-weight: 400; line-height: 130%; color: #666;}
+    .listType6 .tableWrap table td select{width: 100%; height: 54px; border: 1px solid #DDD; border-radius: 3px; padding-inline: 16px; font-size: 14px; font-weight: 400; line-height: 130%; color: #666; background-image: url('../images/kcab_select_arrow_666.svg'); background-repeat: no-repeat; background-position: calc(100% - 20px) center;}
     .listType6 .reqBox{margin-top: 24px; background-color: #F5F5F5; padding-block: 24px; text-align: center;}
     .listType6 .reqBox input[type="checkbox"]{display: none;}
     .listType6 .reqBox input[type="checkbox"]:checked+label{background-image: url('../images/kcab_checkbox_on.svg');}
@@ -851,11 +851,11 @@
     .scrollRightBox{border: 1px solid #DDD; height: 70dvh; overflow: auto; box-sizing: border-box;}
     
     .scrollLeftBox{list-style: none;}
-    .scrollLeftBox>li>p{font-size: 15px; font-weight: 500; line-height: 140%; color: #2A2E52; background-color: #D4EEF5; padding: 16px 20px; border-top: 1px solid #FFF; border-bottom: 1px solid #FFF;}
-    .scrollLeftBox>li h4{font-size: 15px; font-weight: 500; line-height: 140%; color: #2A2E52; background-color: #D4EEF5; padding: 16px 20px 16px 36px; border-top: 1px solid #FFF; border-bottom: 1px solid #FFF;}
-    .scrollLeftBox>li ul{list-style: none; padding-top: 16px; padding-inline: 20px; border: 1px solid #EDEDED;}
+    .scrollLeftBox>li>p{font-size: 15px; font-weight: 500; line-height: 140%; color: #2A2E52; background-color: #D4EEF5; padding: 16px 20px; border-top: 1px solid #FFF; border-bottom: 1px solid #FFF; cursor: pointer;}
+    .scrollLeftBox>li h4{font-size: 15px; font-weight: 500; line-height: 140%; color: #2A2E52; background-color: #D4EEF5; padding: 16px 20px 16px 36px; border-top: 1px solid #FFF; border-bottom: 1px solid #FFF; cursor: pointer;}
+    .scrollLeftBox>li ul{list-style: none; padding-block: 16px; padding-inline: 20px; border: 1px solid #EDEDED;}
     .scrollLeftBox>li ul li{position: relative; padding-left: 10px;}
-    .scrollLeftBox>li ul li:not(.active){display: none;}
+    /* .scrollLeftBox>li ul li:not(.active){display: none;} */
     .scrollLeftBox>li ul li:not(:last-of-type){margin-bottom: 14px;}
     .scrollLeftBox>li ul li::before{content: ''; display: block; width: 3px; height: 3px; border-radius: 50%; background-color: #2A2E52; position: absolute; left: 0; top: 6px;}
     .scrollLeftBox>li ul li a{font-size: 14px; font-weight: 100; color: #2A2E52; line-height: 130%;}
@@ -1131,7 +1131,7 @@
     mark.colorBlue{color: #26A5FF;}
     mark.colorRed{color: #D33636;}
 
-    .formFlex{display: flex; gap: 8px; align-items: center;}
+    .formFlex{display: flex; gap: 8px; align-items: center; flex-wrap: wrap;}
     .colorDarkBlue{width: 160px; height: 54px; background-color: #2A3E82; color: #FFF; border-radius: 3px; font-size: 15px; font-weight: 700;}
     .colorLightGray{width: 160px; height: 54px; background-color: #BBB; color: #FFF; border-radius: 3px; font-size: 15px; font-weight: 700;}
 
@@ -1139,8 +1139,8 @@
     .minWidth div{position: relative; min-width: 160px;}
     .minWidth div input{background-image: url('../images/kcab_icon_cal.svg'); background-position: calc(100% - 20px) center; background-repeat: no-repeat;}
 
-    .applyInfoBox{background-color: #f5f5f5; padding: 40px;}
-    .applyInfoBox p{font-size: 18px; font-weight: 400; line-height: 150%; color: #434343;}
+    .applyInfoBox{background-color: #f5f5f5; padding: 20px;}
+    .applyInfoBox p{font-size: 16px; font-weight: 400; line-height: 150%; color: #434343;}
     .applyInfoBox+small{font-size: 14px; font-weight: 400; color: #666; display: block; margin-top: 16px;}
 
     #applyKCAB ol{margin-bottom: 20px;}
@@ -1181,11 +1181,11 @@
     .formButtonBox button{flex: 1;}
 
     .formDate{flex-wrap: wrap;}
-    .formDate .dateBox{position: relative; min-width: 120px; width: 24%;}
+    .formDate .dateBox{position: relative; min-width: 160px; width: 24%;}
     .formDate .dateBox button{position: absolute; right: 20px; top: 50%; transform: translate(0, -50%); width: 16px; height: 16px; text-indent: -9999px; background-image: url('../images/kcab_icon_cal.svg'); background-repeat: no-repeat; background-position: center;}
-    .formDate>input{width: 24% !important;}
+    .formDate>input{flex: 1; min-width: 160px;}
 
-    .formRadio{gap: 32px; align-items: center; height: 54px;}
+    .formRadio{gap: 8px 32px; min-height: 54px; align-items: center;}
     .formRadio input[type="radio"]{display: none;}
     .formRadio input[type="radio"]:checked+label{background-image: url('../images/kcab_icon_radio_on.svg');}
     .formRadio label{cursor: pointer; background-image: url('../images/kcab_icon_radio_off.svg'); background-repeat: no-repeat; background-position: left center; padding-left: 28px; font-size: 15px; font-weight: 400; color: #434343;}
@@ -1231,11 +1231,11 @@
     #panelOfArbitrators .tableWrap{display: none;}
 
     .tableWrap:has(.arbitratorDetail){display: block;}
-    .arbitratorDetail{width: 100%; border-top: 2px solid #003E7F;}
+    .arbitratorDetail{width: 100%; border-top: 2px solid #003E7F; table-layout: fixed;}
     .arbitratorDetail tr{border-bottom: 1px solid #DDD;}
     .arbitratorDetail tr>*:not(:last-child){border-right: 1px solid #DDD;}
-    .arbitratorDetail td{background-color: #FFF; vertical-align: middle; padding-block: 14px; padding-inline: 24px; font-size: 13px; font-weight: 400; line-height: 150%; color: #434343;}
-    .arbitratorDetail th{background-color: #FAFAFA; font-size: 14px; font-weight: 400; line-height: 140%; color: #767676; padding-block: 12px; padding-inline: 20px; text-align: center; vertical-align: middle;}
+    .arbitratorDetail td{background-color: #FFF; vertical-align: middle; padding-block: 14px; padding-inline: 12px; font-size: 13px; font-weight: 400; line-height: 150%; color: #434343;}
+    .arbitratorDetail th{background-color: #FAFAFA; font-size: 14px; font-weight: 400; line-height: 140%; color: #767676; padding-block: 12px; padding-inline: 12px; text-align: center; vertical-align: middle;}
 
     .buttonLarge{display: flex; gap: 8px;}
     .buttonLarge a{flex: 1; display: block; background-color: #D4EEF5; color: #2A3E82; padding: 24px 40px; background-image: url('../images/kcab_icon_button_arrow.svg'); background-repeat: no-repeat; background-position: calc(100% - 40px) center;}
@@ -1435,7 +1435,7 @@
     .rulesHistory>li a{display: block;}
     .rulesHistory>li button{font-size: 15px; font-weight: 400; line-height: 140%; color: inherit; width: 100%;}
     .rulesHistory.downloadBox{flex-direction: column; align-items: flex-start; gap: 16px;}
-    .rulesHistory.downloadBox ol{flex-wrap: wrap;}
+    .rulesHistory.downloadBox ol{flex-wrap: wrap; flex-direction: row;}
 
     .rulesTabContent>p{font-size: 16px; font-weight: 400; line-height: 150%; color: #434343;}
     .rulesTabContent>p a{font-weight: 600;}
@@ -2381,7 +2381,7 @@
     .formButtonBox button{flex: 1;}
 
     .formDate{flex-wrap: wrap;}
-    .formDate .dateBox{position: relative; min-width: 120px; width: 24%;}
+    .formDate .dateBox{position: relative; min-width: 160px; width: 24%;}
     .formDate .dateBox button{position: absolute; right: 20px; top: 50%; transform: translate(0, -50%); width: 16px; height: 16px; text-indent: -9999px; background-image: url('../images/kcab_icon_cal.svg'); background-repeat: no-repeat; background-position: center;}
     .formDate>input{width: 24% !important;}
 
