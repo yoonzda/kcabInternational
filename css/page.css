@@ -26,6 +26,10 @@
 .listType11 .equipmentBox ol>li.icon14{background-image: url('../images/kcab_sub02_08_icon_14.svg');}
 .listType11 .equipmentBox ol>li.icon15{background-image: url('../images/kcab_sub02_08_icon_15.svg');}
 
+#whoWeAre img{max-width: 200px; margin: 0 auto; display: block;}
+#womenWhoWeAre img{max-width: 290px; margin: 0 auto; display: block;}
+#gettingInvolved img{margin: 0; display: block;}
+
 .listType3 li a{display: block;}
 
 .wave{overflow: hidden;}
@@ -1639,6 +1643,26 @@
     .mediationProcedure>li div h4{font-size: 20px; font-weight: 500; line-height: 140%; color: #222; margin-bottom: 16px;}
     .mediationProcedure>li div div p{font-size: 15px; font-weight: 400; line-height: 150%; color: #434343;}
     .mediationProcedure>li div div p:not(:last-of-type){margin-bottom: 12px;}
+
+    /* 0217 About Us > KCAB Next - tab03 */
+    .listType2 li div p small{display: block; font-size: 15px; font-weight: 400; line-height: 140%; color: #434343; margin-top: 4px;}
+
+    /* 0217 About Us > KCAB Next - tab02 */
+    .memberList{}
+    .memberList h3{font-size: 24px; font-weight: 500; line-height: 140%; color: #222; margin-bottom: 28px;}
+    .memberList ul{list-style: none;}
+    .memberList ul>li{display: flex; gap: 12px;}
+    .memberList ul>li:not(:last-of-type){margin-bottom: 20px;}
+    .memberList ul>li img{max-width: 180px;}
+    .memberList ul>li div{padding-inline: 16px; padding-block: 16px; box-sizing: border-box; border-top: 1px solid #121212; border-bottom: 1px solid #DDD; display: flex; flex-direction: column; justify-content: center; flex: 1;}
+
+    .memberList ul>li div p{font-size: 20px; font-weight: 600; line-height: 140%; color: #222;}
+    .memberList ul>li div p small{display: block; font-size: 14px; margin-top: 4px; font-weight: 400; line-height: 140%; color: #626D84;}
+    .memberList ul>li div a{font-size: 14px; font-weight: 600; line-height: 40px; color: #121212; text-align: center; padding-right: 20px; box-sizing: border-box; margin-top: auto; display: block; border: 1px solid #121212; width: 110px; height: 40px; background-image: url('../images/kcab_icon_left_black.svg'); background-repeat: no-repeat; background-position: calc(100% - 20px) center;}
+
+    .memberList div:has(h4){margin-top: 48px;}
+    .memberList h4{font-size: 20px; font-weight: 500; line-height: 140%; color: #222; position: relative; padding-left: 12px; margin-bottom: 28px;}
+    .memberList h4::before{content: ''; display: block; width: 3px; height: 18px; left: 0; top: 7px; background-color: #294DC7; position: absolute;}
 }
 
 /* pc */
@@ -2290,7 +2314,7 @@
 
     .listType2{list-style: none; margin-bottom: 80px;}
     .listType2 li{display: flex; gap: 20px; align-items: center; cursor: pointer;}
-    .listType2 li:not(:last-of-type){margin-bottom: 44px;}
+    .listType2 li:not(:last-of-type){margin-bottom: 100px;}
     .listType2 li img{width: 420px;}
     .listType2 li div:not(.eventImageBox){flex: 1; min-width: 0;}
     .listType2 li div mark{font-size: 16px; font-weight: 600; line-height: 140%; color: #294DC7; display: block; margin-bottom: 4px;}
@@ -2696,7 +2720,9 @@
     .listType9{list-style: none; margin-top: 100px;}
     .listType9>li:not(:last-of-type){margin-bottom: 100px;}
     .listType9 h3{font-size: 24px; font-weight: 500; line-height: 140%; color: #222; padding-left: 12px; position: relative; margin-bottom: 24px; border-bottom: 1px solid #121212; padding-bottom: 20px;}
-    .listType9 h3::before{content: ''; display: block; position: absolute; left: 0; top: 10px; /*sub02*/ width: 3px; height: 18px; background-color: #294DC7;}
+    .listType9 h3::before{content: ''; display: block; position: absolute; left: 0; width: 3px; height: 18px; background-color: #294DC7;}
+    .listType9:not(.sub01) h3::before{top: 10px;}
+    .listType9.sub01 h3::before{top: 7px;}
     .listType9>p{font-size: 18px; font-weight: 400; line-height: 150%; color: #434343; margin-bottom: 18px;}
     .listType9>li>p{font-size: 18px; font-weight: 400; line-height: 150%; color: #434343; margin-bottom: 18px;}
 
@@ -3062,4 +3088,20 @@
 
     /* 0217 About Us > KCAB Next - tab03 */
     .listType2 li div p small{display: block; font-size: 17px; font-weight: 400; line-height: 140%; color: #434343; margin-top: 4px;}
+
+    /* 0217 About Us > KCAB Next - tab02 */
+    .memberList{}
+    .memberList h3{font-size: 36px; font-weight: 500; line-height: 140%; color: #222; margin-bottom: 60px;}
+    .memberList ul{list-style: none; display: flex; gap: 60px min(6%, 60px); flex-wrap: wrap;}
+    .memberList ul>li{flex: 1; display: flex; align-items: center; gap: min(4%, 20px);}
+    .memberList ul>li img{width: 180px;}
+    .memberList ul>li div{padding-inline: 16px; padding-block: 28px; min-width: 200px; box-sizing: border-box; border-top: 1px solid #121212; border-bottom: 1px solid #DDD; height: 100%; display: flex; flex-direction: column; justify-content: center; flex: 1;}
+
+    .memberList ul>li div p{font-size: 28px; font-weight: 600; line-height: 140%; color: #222;}
+    .memberList ul>li div p small{display: block; margin-top: 8px; font-size: 16px; font-weight: 400; line-height: 140%; color: #626D84;}
+    .memberList ul>li div a{font-size: 14px; font-weight: 600; line-height: 40px; color: #121212; text-align: center; padding-right: 20px; box-sizing: border-box; margin-top: auto; display: block; border: 1px solid #121212; width: 110px; height: 40px; background-image: url('../images/kcab_icon_left_black.svg'); background-repeat: no-repeat; background-position: calc(100% - 20px) center;}
+
+    .memberList div:has(h4){margin-top: 100px;}
+    .memberList h4{font-size: 24px; font-weight: 500; line-height: 140%; color: #222; position: relative; padding-left: 12px; margin-bottom: 28px;}
+    .memberList h4::before{content: ''; display: block; width: 3px; height: 18px; left: 0; top: 7px; background-color: #294DC7; position: absolute;}
 }
