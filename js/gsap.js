@@ -52,3 +52,38 @@ let tl_contact = gsap.timeline({
 tl_contact.fromTo(".contactList .item01", {y: 100, opacity: 0}, {y: 0, opacity: 1, duration: 1});
 tl_contact.fromTo(".contactList .item02", {y: 100, opacity: 0}, {y: 0, opacity: 1, duration: 1}, "-=0.8");
 tl_contact.fromTo(".contactList .item03", {y: 100, opacity: 0}, {y: 0, opacity: 1, duration: 1}, "-=0.8");
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+const timeline = document.querySelector(".timeline");
+const line = document.querySelector(".line");
+
+gsap.to(line, {
+  height: timeline.scrollHeight,
+  ease: "none",
+  scrollTrigger: {
+    trigger: timeline,
+    start: "top center",
+    end: "bottom center",
+    scrub: true
+  }
+});
+
+const lis = gsap.utils.toArray(".timeline li");
+
+lis.forEach((li, i) => {
+  ScrollTrigger.create({
+    trigger: li,
+    start: "top center",
+    end: "bottom center",
+    onEnter: () => {
+      lis.forEach(el => el.classList.remove("active"));
+      li.classList.add("active");
+    },
+    onEnterBack: () => {
+      lis.forEach(el => el.classList.remove("active"));
+      li.classList.add("active");
+    }
+  });
+});
