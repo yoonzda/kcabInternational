@@ -877,7 +877,7 @@
         position: absolute; left: 20px;
     }
     
-    .scrollRightBox{padding: 28px;}
+    .scrollRightBox{padding: 28px; background-image: url('../images/kcab_watermark.svg'); background-repeat: no-repeat; background-position: center;}
     .listType8{list-style: none;}
     .listType8>li:not(:last-of-type){margin-bottom: 40px;}
     .listType8 h4{font-size: 20px; font-weight: 500; line-height: 140%; color: #222; padding-left: 12px; position: relative; padding-bottom: 20px; border-bottom: 1px solid #121212; margin-bottom: 24px;}
@@ -1274,25 +1274,6 @@
         width: 100%; height: 100dvh;
         background-color: rgba(0, 0, 0, 0.5);
     }
-    .popWrap{
-        position: absolute;
-        left: 50%; top: 50%; transform: translate(-50%, -50%);
-        display: flex; gap: 10px;
-    }
-    .popWrap button{width: 50px; height: 50px; background-color: #121212; order: 2; text-indent: -9999px; background-image: url('../images/kcab_icon_close_white.svg'); background-repeat: no-repeat; background-position: center;}
-    .popWrap>div{background-color: #FFF; padding: 40px; width: 720px; box-sizing: border-box;}
-    .popWrap .topBox{display: flex; gap: 20px; margin-bottom: 24px;}
-    .popWrap .topBox div:not(.imageBox){border-top: 1px solid #121212; border-bottom: 1px solid #DDD; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; flex: 1; padding-inline: 24px;}
-    .popWrap .topBox div b{font-size: 28px; font-weight: 600; color: #222; display: block; margin-bottom: 8px;}
-    .popWrap .topBox div small{font-size: 16px; font-weight: 400; color: #626D84; line-height: 140%; display: block; margin-bottom: 28px;}
-    .popWrap .bottomBox{}
-    .popWrap .bottomBox table{border-top: 1px solid #DDD; width: 100%;}
-    .popWrap .bottomBox table tr{border-bottom: 1px solid #DDD;}
-    .popWrap .bottomBox table th{width: 180px; background-color: #FAFAFA; border-right: 1px solid #DDD; font-size: 16px; font-weight: 500; color: #222; vertical-align: middle;}
-    .popWrap .bottomBox table td{padding: 24px 32px; font-size: 16px; font-weight: 400; line-height: 140%; color: #434343;}
-    .popWrap .bottomBox table td ul{list-style: none;}
-    .popWrap .bottomBox table td ul li{position: relative; padding-left: 12px;}
-    .popWrap .bottomBox table td ul li::before{content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; background-color: #294DC7; position: absolute; left: 0; top: 8px;}
 
     .listType10{list-style: none;}
     .listType10>li:not(:last-of-type){margin-bottom: 28px;}
@@ -1618,6 +1599,9 @@
     }
     .popWrap button{width: 50px; height: 50px; background-color: #121212; order: 2; text-indent: -9999px; background-image: url('../images/kcab_icon_close_white.svg'); background-repeat: no-repeat; background-position: center; order: -1;}
     .about.pop .popWrap>div{background-color: #FFF; padding: 20px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column;}
+
+    .mediator.pop .imageBox{width: 180px; height: 220px; border: none; padding: 0; position: relative;}
+    .mediator.pop .imageBox img{width: 100%; height: 100%; object-fit: cover; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 
     .about.pop .imageBox{max-width: 320px; width: 100%; height: 218px; border: none; padding: 0; margin: 0 auto;}
     .about.pop .imageBox img{width: 100%; height: 100%; object-fit: cover;}
@@ -2600,7 +2584,7 @@
     .bgBlue>ul>li ul li{font-size: 16px; font-weight: 400; color: #434343; line-height: 150%;}
 
     .scrolllList{display: flex; gap: 30px;}
-    .scrollLeftBox{width: 270px; height: 780px; overflow: auto;}
+    .scrollLeftBox{width: 270px; height: 780px; overflow: auto; background-color: #FAFAFA;}
     .scrollRightBox{flex: 1; border: 1px solid #DDD; height: 780px; overflow: auto; box-sizing: border-box;}
     
     .scrollLeftBox{list-style: none;}
@@ -2624,7 +2608,7 @@
         position: absolute; left: 0;
     }
     
-    .scrollRightBox{padding: 40px;}
+    .scrollRightBox{padding: 40px; background-image: url('../images/kcab_watermark.svg'); background-repeat: no-repeat; background-position: center;}
     .listType8{list-style: none;}
     .listType8>li:not(:last-of-type){margin-bottom: 40px;}
     .listType8 h4{font-size: 24px; font-weight: 500; line-height: 140%; color: #222; padding-left: 12px; position: relative; padding-bottom: 20px; border-bottom: 1px solid #121212; margin-bottom: 40px;}
@@ -3088,6 +3072,9 @@
     }
     .popWrap button{width: 50px; height: 50px; background-color: #121212; order: 2; text-indent: -9999px; background-image: url('../images/kcab_icon_close_white.svg'); background-repeat: no-repeat; background-position: center;}
     .about.pop .popWrap>div{background-color: #FFF; padding: 40px; width: 880px; box-sizing: border-box; display: flex; flex-direction: column;}
+
+    .mediator.pop .imageBox{width: 180px; height: 220px; border: none; padding: 0; position: relative;}
+    .mediator.pop .imageBox img{width: 100%; height: 100%; object-fit: cover; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 
     .about.pop .imageBox{width: 320px; height: 218px; border: none; padding: 0;}
     .about.pop .imageBox img{width: 100%; height: 100%; object-fit: cover;}
