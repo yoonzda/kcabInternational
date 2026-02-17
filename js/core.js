@@ -159,7 +159,9 @@ function accordionFunction(){
 
 function aboutPopFunction(){
     $('.profileList button').click(function(){
-        $('.about.pop').addClass('active');
+        var popId = $(this).attr('data-popName');
+
+        $('#'+popId).addClass('active');
     });
 
     $('.about.pop button').click(function(){

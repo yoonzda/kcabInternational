@@ -1625,6 +1625,18 @@
     .sub01Content .profileList:not(.court) ol li .textBox a{font-size: 16px; font-weight: 600; line-height: 150%; color: #26A5FF; text-decoration: underline; margin-bottom: 28px; display: block;}
     .sub01Content .profileList ol li .textBox button{font-size: 14px; font-weight: 600; line-height: 140%; color: #121212; border: 1px solid #121212; width: 130px; height: 46px; padding-right: 20px; background-image: url('../images/kcab_icon_left_black.svg'); background-repeat: no-repeat; background-position: calc(100% - 32px) center;}
     .sub01Content .profileList.court ol li .textBox a{display: block; text-align: center; line-height: 46px; font-size: 14px; font-weight: 600; color: #121212; border: 1px solid #121212; width: 130px; height: 46px; padding-right: 20px; background-image: url('../images/kcab_icon_left_black.svg'); background-repeat: no-repeat; background-position: calc(100% - 32px) center;}
+    
+    /* 0217 About Us > Arbitration in Seoul */
+    .mediationProcedure{list-style: none; margin-top: 24px; position: relative;}
+    /* .mediationProcedure::before{content: ''; display: block; width: 1px; height: 100%; background-color: #294DC7; position: absolute; left: 14px; top: 14px;} */
+    .mediationProcedure>li{display: flex; gap: 16px; padding-left: 36px; position: relative;}
+    .mediationProcedure>li::after{content: ''; display: block; width: 9px; height: 9px; background-color: #294DC7; position: absolute; left: 10px; top: 10px; border-radius: 50%;}
+    .mediationProcedure>li:not(:last-of-type)::before{content: ''; width: 1px; height: 100%; background-color: #294DC7; display: block; position: absolute; left: 0; top: 14px; margin-left: 14px;}
+    .mediationProcedure>li:not(:last-of-type){padding-bottom: 40px;}
+    .mediationProcedure>li span{font-size: 20px; font-weight: 700; line-height: 140%; color: #2A3E82;}
+    .mediationProcedure>li div h4{font-size: 20px; font-weight: 500; line-height: 140%; color: #222; margin-bottom: 16px;}
+    .mediationProcedure>li div div p{font-size: 15px; font-weight: 400; line-height: 150%; color: #434343;}
+    .mediationProcedure>li div div p:not(:last-of-type){margin-bottom: 12px;}
 }
 
 /* pc */
@@ -3033,4 +3045,16 @@
     .sub01Content .profileList:not(.court) ol li .textBox a{font-size: 18px; font-weight: 600; line-height: 150%; color: #26A5FF; text-decoration: underline; margin-bottom: 32px; display: block;}
     .sub01Content .profileList ol li .textBox button{font-size: 16px; font-weight: 600; line-height: 140%; color: #121212; border: 1px solid #121212; width: 130px; height: 46px; padding-right: 20px; background-image: url('../images/kcab_icon_left_black.svg'); background-repeat: no-repeat; background-position: calc(100% - 32px) center;}
     .sub01Content .profileList.court ol li .textBox a{display: block; font-size: 16px; font-weight: 600; line-height: 140%; color: #121212; border: 1px solid #121212; width: 130px; height: 46px; padding-right: 20px; background-image: url('../images/kcab_icon_left_black.svg'); background-repeat: no-repeat; background-position: calc(100% - 32px) center; text-align: center; line-height: 46px;}
+
+    /* 0217 About Us > Arbitration in Seoul */
+    .mediationProcedure{list-style: none; margin-top: 60px; position: relative;}
+    /* .mediationProcedure::before{content: ''; display: block; width: 1px; height: 100%; background-color: #294DC7; position: absolute; left: 14px; top: 14px;} */
+    .mediationProcedure>li{display: flex; gap: 32px; padding-left: 70px; position: relative;}
+    .mediationProcedure>li::after{content: ''; display: block; width: 9px; height: 9px; background-color: #294DC7; position: absolute; left: 10px; top: 14px; border-radius: 50%;}
+    .mediationProcedure>li:not(:last-of-type)::before{content: ''; width: 1px; height: 100%; background-color: #294DC7; display: block; position: absolute; left: 0; top: 18px; margin-left: 14px;}
+    .mediationProcedure>li:not(:last-of-type){padding-bottom: 120px;}
+    .mediationProcedure>li span{font-size: 26px; font-weight: 700; line-height: 140%; color: #2A3E82;}
+    .mediationProcedure>li div h4{font-size: 26px; font-weight: 500; line-height: 140%; color: #222; margin-bottom: 24px;}
+    .mediationProcedure>li div div p{font-size: 18px; font-weight: 400; line-height: 150%; color: #434343;}
+    .mediationProcedure>li div div p:not(:last-of-type){margin-bottom: 18px;}
 }
